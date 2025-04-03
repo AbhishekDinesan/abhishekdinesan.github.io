@@ -17,13 +17,20 @@ jobs:
         with:
           node-version: 18
 
+      - name: Change Directory to App
+        working-directory: ./app
+        run: ls 
+
       - name: Install Dependencies
+        working-directory: ./app
         run: npm install
 
       - name: Build Application
+        working-directory: ./app
         run: npm run build
 
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: ./app
         run: npm run deploy
