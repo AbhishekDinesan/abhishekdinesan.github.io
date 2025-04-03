@@ -4,34 +4,32 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+    - name: Checkout Repository
+      uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
 
-      - name: Change Directory to App
-        working-directory: ./app
-        run: ls
+    - name: Install Dependencies
+      working-directory: ./app
+      run: npm install
 
-      - name: Install Dependencies
-        working-directory: ./app
-        run: npm install
+    - name: Build Application
+      working-directory: ./app
+      run: npm run build
 
-      - name: Build Application
-        working-directory: ./app
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_ACTOR: ${{ github.actor }}
-        working-directory: ./app
-        run: npm run deploy
+    - name: Deploy to GitHub Pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_ACTOR: ${{ github.actor }}
+      working-directory: ./app
+      run: npm run deploy
