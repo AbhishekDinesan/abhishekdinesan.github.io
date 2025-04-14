@@ -9,9 +9,9 @@ const Navbar = () => {
       <HStack justifyContent="space-between"  w="100%">
         <div>Abhi Dinesan</div>
         <HStack gap='6' align-items='flex-end'>
-          <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'home'}/>
-          <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'personal'}/>
-          <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'career'}/>
+          <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'home'} link='/'/>
+          <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'personal'} link="/personal"/>
+          <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'career'} link="/career"/>
         </HStack>
         <ColorModeButton />
       </HStack>

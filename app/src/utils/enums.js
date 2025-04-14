@@ -1,3 +1,5 @@
+
+
 const ButtonSizes = {
     xs: "xs",
     small: "sm",
@@ -12,4 +14,12 @@ const ButtonVariant = {
 };
 
 
-export {ButtonSizes, ButtonVariant}
+const CardTypes = {
+    ace: "GiCardAceDiamonds",
+    two: "GiCard2Diamonds",
+    three: "GiCard3Diamonds",
+    four: "GiCard4Diamonds",
+    five: "GiCard5Diamonds",
+}
+
+export {ButtonSizes, ButtonVariant, CardTypes}
