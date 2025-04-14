@@ -1,5 +1,3 @@
-import { Icon } from "@chakra-ui/react"
-import { Md3dRotation } from "react-icons/md"
 import * as Icons from "react-icons/gi";
 
 const iconSelector = ({iconName}) => {

@@ -1,7 +1,4 @@
-import TextButton from './Button'
-import { ButtonSizes, ButtonVariant, CardTypes } from '../utils/enums'
-import { Container } from '@chakra-ui/react'
-import { Avatar, Button, Card } from "@chakra-ui/react"
+import {Button, Card } from "@chakra-ui/react"
 import CustomIcon from './icons'
 
 

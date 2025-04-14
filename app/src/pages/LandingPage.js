@@ -1,6 +1,5 @@
 import { Card, HStack } from "@chakra-ui/react";
 import {CustomCard, FaceCard} from "../components/Card"
-import CustomIcon from "../components/icons";
 import {CardTypes} from '../utils/enums'
 
 const LandingPage = () => {
