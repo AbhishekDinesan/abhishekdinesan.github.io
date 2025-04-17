@@ -6,10 +6,10 @@ const LandingPage = () => {
     return(
         <div>
             <HStack>
-            <FaceCard cardType={CardTypes.ace} />
-            <FaceCard cardType={CardTypes.two} />
-            <FaceCard cardType={CardTypes.three} />
-            <FaceCard cardType={CardTypes.four} />
+                <FaceCard cardType={CardTypes.ace} />
+                <FaceCard cardType={CardTypes.two} />
+                <FaceCard cardType={CardTypes.three} />
+                <FaceCard cardType={CardTypes.four} />
             </HStack>
         </div>
     )

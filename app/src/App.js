@@ -11,18 +11,30 @@ function App() {
   return (
     <Provider>
       <BrowserRouter>
-        <div className="App">
+        <div
+          className="App"
+          style={{
+            display: 'flex',
+            flexDirection: "column",
+            minHeight: "100vh",
+            paddingLeft: "1em",
+            paddingRight: "1em"
+          }}
+        >
           <Navbar />
-          <Routes>
-            <Route path="/" element={<LandingPage />}></Route>
-            <Route path="/personal" element={<PersonalPage />} />
-            <Route path="/career" element={<CareerPage />} />
-          </Routes>
+          <div style={{ flex: 1 }}>
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/personal" element={<PersonalPage />} />
+              <Route path="/career" element={<CareerPage />} />
+            </Routes>
+          </div>
           <Block />
         </div>
       </BrowserRouter>
     </Provider>
   );
 }
+
 
 export default App;
