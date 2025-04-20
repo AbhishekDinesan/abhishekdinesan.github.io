@@ -12,6 +12,7 @@ const Navbar = () => {
           <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'home'} link='/'/>
           <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'personal'} link="/personal"/>
           <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'career'} link="/career"/>
+          <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'ideas'} link="/ideas"/>
         </HStack>
         <ColorModeButton />
       </HStack>

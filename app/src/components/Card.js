@@ -1,16 +1,19 @@
-import {Button, Card } from "@chakra-ui/react"
+import {Button, Card, Image } from "@chakra-ui/react"
 import CustomIcon from './icons'
 
 
 
-const CustomCard = ({cardTitle, buttonText, cardDescription }) =>{
-  console.log({ cardTitle, buttonText, cardDescription })
+const CustomCard = ({cardTitle, buttonText, cardDescriptionOne, cardDescriptionTwo }) =>{
   return (
-    <Card.Root width="320px" height='500px'>
+    <Card.Root width ='85%' height= 'auto' >
       <Card.Body gap="2">
-        <Card.Title textAlign="right" mt="2">{cardTitle}</Card.Title>
+        <Card.Title  mt="2">{cardTitle}</Card.Title>
+        <Image src="/otpp.jpg" alt="Ontario Teachers" />
         <Card.Description>
-          {cardDescription}
+          {cardDescriptionOne}
+        </Card.Description>
+        <Card.Description>
+          {cardDescriptionTwo}
         </Card.Description>
       </Card.Body>
       <Card.Footer justifyContent="flex-end">
@@ -26,9 +29,6 @@ const FaceCard = ({ cardType }) => {
   return (
       <CustomIcon
         iconName={cardType}
-        style={{
-          position: 'absolute',
-        }}
       />
   );
 };
