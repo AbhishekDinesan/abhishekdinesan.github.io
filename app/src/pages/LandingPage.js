@@ -1,10 +1,11 @@
 
 import {FaceCard} from "../components/Card"
 import {CardTypes} from '../utils/enums'
-import { Center, HStack } from "@chakra-ui/react";
+import { Center, HStack, Text } from "@chakra-ui/react";
 
 const LandingPage = () => {
   return (
+    <div>
     <Center minH="80vh"  w="full">
       <HStack  spacing={20} maxWidth="100%">
         <div>
@@ -24,9 +25,10 @@ const LandingPage = () => {
         <FaceCard cardType={CardTypes.jack} />
         <FaceCard cardType={CardTypes.queen} />
         <FaceCard cardType={CardTypes.king} />
-
       </HStack>
     </Center>
+    <Text>my life; as told by a deck of cards</Text>
+    </div>
   );
 };
     

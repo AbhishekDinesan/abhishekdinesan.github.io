@@ -1,5 +1,5 @@
 
-import { Container, HStack, Icon, Link, Stack } from '@chakra-ui/react'
+import { HStack, Icon, Link, Stack } from '@chakra-ui/react'
 import { SiGithub, SiGmail, SiLinkedin, SiSpotify, SiStrava } from 'react-icons/si'
 
 const Block = () => (

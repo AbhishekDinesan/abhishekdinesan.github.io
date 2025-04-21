@@ -1,5 +1,5 @@
 import InfoSection from "../components/infoSection"
-import {Stack, HStack, SimpleGrid} from "@chakra-ui/react"
+import {Stack, SimpleGrid, Image} from "@chakra-ui/react"
 import { Typewriter } from 'react-simple-typewriter';
 import AboutMe from '../info/AboutMe.json';
 import Music from '../info/Music.json';
@@ -13,6 +13,7 @@ const PersonalPage = () => {
     return (
         <div>
             <Stack>
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} paddingTop="2em">
                 <InfoSection
                     sectionHeading={
                         <Typewriter
@@ -27,6 +28,8 @@ const PersonalPage = () => {
                     }
                     infoArray={AboutMe}
                 />
+                <Image />
+                </SimpleGrid>
                 <SimpleGrid columns={{ base: 2, md: 3 }} spacing={10} paddingTop="2em">
                     <InfoSection sectionHeading={"music i'd tell ya to listen to"} infoArray={Music} />
                     <InfoSection sectionHeading={"books i'd recently read"} infoArray={Books}/>
