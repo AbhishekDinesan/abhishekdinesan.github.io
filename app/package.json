@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/modal": "^2.3.1",
     "@chakra-ui/react": "^3.16.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
@@ -19,20 +20,14 @@
     "react-simple-typewriter": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://AbhishekDinesan.github.io/PersonalWebsite",
+  "homepage": "https://AbhishekDinesan.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build --repo https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/AbhishekDinesan/PersonalWebsite.git",
+    "deploy": "gh-pages -d build --repo https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/AbhishekDinesan/.git",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -47,7 +42,9 @@
     ]
   },
   "devDependencies": {
+    "@eslint/js": "^9.26.0",
     "gh-pages": "^6.3.0",
+    "globals": "^16.0.0",
     "react-router-dom": "^7.5.0"
   }
 }

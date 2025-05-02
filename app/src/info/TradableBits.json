@@ -1,0 +1,8 @@
+{
+    "title": "Tradable Bits",
+    "location" : "Vancouver, British Columbia",
+    "skills": ["PostgreSQL", "Flask", "Javascript", "SQL", "GraphQL" ],
+    "description": "Developed full-stack features & improvements across the CRM platform, including campaigns, rate-throttling & language localization",
+    "link": "https://tradablebits.com/",
+    "imageUrl": "https://d1hbpr09pwz0sk.cloudfront.net/logo_url/tradable-bits-27526790"
+}

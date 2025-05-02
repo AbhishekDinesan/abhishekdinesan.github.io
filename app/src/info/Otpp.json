@@ -1,0 +1,8 @@
+{
+    "title": "Ontario Teachers Pension Plan",
+    "location" : "Toronto, Ontario",
+    "skills": ["C#", ".NET", "Apache Active MQ", "Kubernetes", "Dapr" ],
+    "description": "Developed Payment Reconcilliation Software that validated $500 000 000 in wire transfers annually, helping our Corporate Finance team's error recognition time go from 12h to 3 mintues.",
+    "imageUrl": "https://asset.brandfetch.io/id1U5YA6xc/idDdTp_R8a.png",
+    "link": "https://www.otpp.com/en-ca/about-us/our-plan/"
+}

@@ -1,0 +1,8 @@
+{
+    "title": "University of Waterloo",
+    "location" : "Waterloo, Ontario",
+    "skills": ["Computer Science", "Combinatorics & Optimization", "Artifical Intelligence" ],
+    "description": "Courses: Algorithims, Data Structures, Non-Linear Optimization, Linear Programs, Object-Oriented Programming, Statistics II, Linear Algebra II, Calculus II",
+    "link": "https://uwaterloo.ca/future-students/programs/business-administration-computer-science-double-degree",
+    "imageUrl": "https://i.pinimg.com/736x/ad/dc/a2/addca2f4c7c8d55ffd19582f7d8a387d.jpg"
+}

@@ -6,6 +6,7 @@ import Block from './components/footer'
 import LandingPage from './pages/LandingPage'
 import PersonalPage from './pages/PersonalPage';
 import CareerPage from './pages/CareerPage';
+import IdeasPage from './pages/IdeasPage';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path="/" element={<LandingPage />} />
               <Route path="/personal" element={<PersonalPage />} />
               <Route path="/career" element={<CareerPage />} />
+              <Route path="/ideas" element={<IdeasPage />} />
             </Routes>
           </div>
           <Block />

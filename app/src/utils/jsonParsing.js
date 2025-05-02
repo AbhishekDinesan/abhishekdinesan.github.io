@@ -2,7 +2,6 @@
 import data from '../info/AboutMe.json';
 
 function parsedJson() {
-    console.log(data); 
     return (
       <div>
         {data.map((item, idx) => (

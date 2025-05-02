@@ -1,0 +1,64 @@
+[
+    {
+    "key": "GiCard2Spades",
+    "year": 2022,
+    "elapsed": "true",
+    "text": {
+            "1": "Graduated high school, jumped off the porch and moved to Waterloo!",
+            "2": "Started 1A term of CS/BBA at UW & WLU",
+            "3": "Learned the foundations of math, computer science & business",
+            "4": "Discovered that Double Degree was not easy :) "
+        }   
+    },
+    {
+    "key": "GiCard3Spades",
+    "year": 2023,
+    "elapsed": "true",
+    "text": {
+        "1": "Completed 1B & 2A terms of CS/BBA",
+        "2": "Worked as a cashier at Math Coffee n Diner, and volunteered as a Web Developer over the summer",
+        "3": "thank god this year is over 😭"
+    }
+    },
+    {
+    "key": "GiCard4Spades",
+    "year": 2024,
+    "elapsed": "true",
+    "text": {
+        "1": "Completed 2B & 3A terms of CS/BBA",
+        "2": "Got my first big boy job at OTPP in Toronto. Learned about the corporate world. Manager repeatedly advised me to 'marry rich'.",
+        "3": "Worked part-time as a software engineer for a property-tech start-up",
+        "4": "Got pretty involved on campus, joined a lot of clubs and volunteered with first-years."
+    }
+    },
+    {
+    "key": "GiCard5Spades",
+    "year": 2025,
+    "elapsed": "true",
+    "text": {
+        "1": "Completing 3B term of CS/BBA",
+        "2": "Moved out the Vancouver to work at Tradable Bits. Learned a lot about software engineering - and myself. Did a lot of travelling and had a blast.",
+        "3": "Currently in Progress."
+    }
+    },
+    {
+    "key": "GiCard6Spades", 
+    "year": 2026,
+    "elapsed": "false"
+    },
+    {
+    "key": "GiCard7Spades",
+    "year": 2027,
+    "elapsed": "false"
+    },
+    {
+    "key": "GiCard8Spades", 
+    "year": 2028,
+    "elapsed": "false"
+    },
+    {
+    "key": "GiCard9Spades", 
+    "year": 2029,
+    "elapsed": "false"
+    }
+]

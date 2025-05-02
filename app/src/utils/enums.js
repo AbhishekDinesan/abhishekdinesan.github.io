@@ -11,23 +11,20 @@ const ButtonSizes = {
 const ButtonVariant = {
     standard: "ghost",
     outline: "outline",
+    alt: "solid"
 };
 
 
 const CardTypes = {
-    ace: "GiCardAceDiamonds",
-    two: "GiCard2Hearts",
+    two: "GiCard2Spades",
     three: "GiCard3Spades",
-    four: "GiCard4Clubs",
-    five: "GiCard5Diamonds",
-    six: "GiCard6Hearts",
-    seven: "GiCard7Diamonds",
-    eight: "GiCard8Diamonds",
-    nine: "GiCard9Diamonds",
-    ten: "GiCard10Hearts",
-    jack: "GiCardJackDiamonds",
-    queen: "GiCardQueenSpades",
-    king: "GiCardKingHearts",
+    four: "GiCard4Spades",
+    five: "GiCard5Spades",
+    six: "GiCard6Spades",
+    seven: "GiCard7Spades",
+    eight: "GiCard8Spades",
+    nine: "GiCard9Spades",
+    ten: "GiCard10Spades"
 }
 
 export {ButtonSizes, ButtonVariant, CardTypes}
