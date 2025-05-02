@@ -20,11 +20,11 @@
     "react-simple-typewriter": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://AbhishekDinesan.github.io/PersonalWebsite",
+  "homepage": "https://abhishekdinesan.github.io",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build --repo https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/AbhishekDinesan/PersonalWebsite.git",
+    "deploy": "gh-pages -d build --repo https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/AbhishekDinesan/abhishekdinesan.github.io.git",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
