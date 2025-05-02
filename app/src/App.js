@@ -25,7 +25,7 @@ function App() {
           <Navbar />
           <div style={{ flex: 1 }}>
             <Routes>
-              <Route path="/home" element={<LandingPage />} />
+              <Route path="/" element={<LandingPage />} />
               <Route path="/personal" element={<PersonalPage />} />
               <Route path="/career" element={<CareerPage />} />
               <Route path="/ideas" element={<IdeasPage />} />
