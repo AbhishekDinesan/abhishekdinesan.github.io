@@ -38,4 +38,6 @@ jobs:
         GITHUB_ACTOR: ${{ github.actor }}
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       working-directory: ./app
-      run: npm run deploy
+      run: |
+         git remote set-url origin https://AbhishekDinesan:${{ secrets.GITHUB_TOKEN }}@github.com/AbhishekDinesan/abhishekdinesan.github.io.git
+         npm run deploy
