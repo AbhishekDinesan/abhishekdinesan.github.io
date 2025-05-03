@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build --repo https://AbhishekDinesan:${{secrets.GITHUB_TOKEN}@github.com/AbhishekDinesan/abhishekdinesan.github.io.git",
+    "deploy": "gh-pages -d build",
     
     "build": "react-scripts build",
     "test": "react-scripts test",
