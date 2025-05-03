@@ -1,7 +1,10 @@
 ## My Personal Website
 
-Work in Progress! (github forces you to make repo public if deploying with github pages)
+https://abhishekdinesan.github.io/
 
-Tools
-- React
-- Chakra UI component library
+Built with React.js
+
+Things I'm working on:
+- Shuffle Animation on Cards
+- bundling images more effectively
+- Blog page

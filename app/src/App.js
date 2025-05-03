@@ -1,6 +1,6 @@
 import './App.css';
 import { Provider} from "./components/ui/provider"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/navbar'
 import Block from './components/footer'
 import LandingPage from './pages/LandingPage'
@@ -11,7 +11,7 @@ import IdeasPage from './pages/IdeasPage';
 function App() {
   return (
     <Provider>
-      <BrowserRouter>
+      <Router>
         <div
           className="App"
           style={{
@@ -33,7 +33,7 @@ function App() {
           </div>
           <Block />
         </div>
-      </BrowserRouter>
+      </Router>
     </Provider>
   );
 }

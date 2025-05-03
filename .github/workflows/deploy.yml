@@ -36,5 +36,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_ACTOR: ${{ github.actor }}
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
       working-directory: ./app
       run: npm run deploy
