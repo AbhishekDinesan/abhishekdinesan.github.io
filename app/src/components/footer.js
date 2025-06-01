@@ -22,7 +22,7 @@ const socialLinks = [
   { href: 'https://github.com/AbhishekDinesan', icon: <SiGithub /> },
   { href: 'https://www.linkedin.com/AbhiDinesan', icon: <SiLinkedin /> },
   { href: 'https://open.spotify.com/user/2wkr4k7yq75hf7lgpifpy0gbv', icon: <SiSpotify /> },
-  { href: 'https://www.linkedin.com/AbhiDinesan', icon: <SiStrava /> }
+  { href: 'https://www.strava.com/athletes/156513757', icon: <SiStrava /> }
 ]
 
 export default Block

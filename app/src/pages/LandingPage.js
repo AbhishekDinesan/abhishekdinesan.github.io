@@ -67,7 +67,7 @@ const LandingPage = () => {
                 </ul>
               ) : (
                 <div style={{ textAlign: 'center' }}>
-                Nice try bud - I'm not gonna reveal ALL my cards.
+                Nice try buddy - I'm not gonna reveal ALL my cards.
                 </div>
               )}
               </Dialog.Body>
@@ -79,23 +79,30 @@ const LandingPage = () => {
         </Dialog.Positioner>
       </Portal>
     </Dialog.Root>
-
-      <HStack marginBottom="2em" spacing={20} maxWidth="100%" flexWrap="wrap">
-        {Object.values(CardTypes).map((card) => (
-          <Box
-            key={card}
-            _hover={{
-              transform: "scale(1.5)",
-              transition: "transform 0.2s ease-in-out",
-              cursor: "pointer",
-            }}
-            onClick={() => handleCardClick(card)}
-          >
-            <FaceCard cardType={card} />
-          </Box>
-        ))}
-      </HStack>
-
+<div
+  style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
+    gap: '1.5rem',
+    padding: '1rem 2rem',
+    width: '100%',
+    boxSizing: 'border-box',
+  }}
+>
+  {Object.values(CardTypes).map((card) => (
+    <Box
+      key={card}
+      _hover={{
+        transform: 'scale(1.1)',
+        transition: 'transform 0.2s ease-in-out',
+        cursor: 'pointer',
+      }}
+      onClick={() => handleCardClick(card)}
+    >
+      <FaceCard cardType={card} />
+    </Box>
+  ))}
+</div>
       <Text>A decade through a deck of cards (2022 - Present)</Text>
     </div>
   );

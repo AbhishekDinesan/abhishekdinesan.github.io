@@ -11,15 +11,11 @@ const iconSelector = ({iconName}) => {
 const CustomIcon = ({ iconName }) => {
   const Selected = iconSelector({ iconName });
   return (
-    <div style={{ overflow: 'hidden', width: '125px', height: 'auto' }}>
-    <Selected
-      style={{ width: '100%', height: '100%' }}
-      preserveAspectRatio="none"
-    />
-  </div>
+    <div style={{ aspectRatio: '2 / 3', width: '100%' }}>
+      <Selected style={{ width: '100%', height: '100%' }} />
+    </div>
   );
 };
-
 export default CustomIcon
 
   
