@@ -67,4 +67,28 @@ const FaceCard = ({ cardType }) => {
   )
 };
 
-export { CareerCard, FaceCard };
+const WritingCard = ({ title, description }) =>{
+  return (
+        <Card.Root width="90%" height="auto">
+      <Card.Body gap="4">
+        <Flex
+          direction="row"
+          align="flex-start"
+          justify="space-between"
+          gap={4}
+        >
+          <Box flex="1">
+            <Card.Title mt="2" fontSize={{ base: "lg", md: "lg" }}>
+              {title}
+            </Card.Title>
+          </Box>
+        </Flex>
+        <Stack spacing={2}>
+          <Card.Description>{description}</Card.Description>
+        </Stack>
+      </Card.Body>
+    </Card.Root>
+  )
+}
+
+export { CareerCard, FaceCard, WritingCard };
