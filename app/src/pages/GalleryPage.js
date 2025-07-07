@@ -1,16 +1,40 @@
+import { Alert, Box, SimpleGrid } from "@chakra-ui/react"
+import { useState, useEffect } from "react"
 
-
-
-
-import { Alert, Box, SimpleGrid} from "@chakra-ui/react"
+const layouts = [
+  [
+    { bg: "gray.100", col: 3, row: 3 },
+    { bg: "gray.200", col: 2, row: 2 },
+    { bg: "gray.300", col: 1, row: 2 },
+    { bg: "gray.400", col: 3, row: 1 },
+    { bg: "gray.500", col: 2, row: 2 },
+    { bg: "gray.600", col: 3, row: 2 },
+    { bg: "gray.700", col: 1, row: 2 },
+  ],
+  [
+    { bg: "blue.100", col: 2, row: 2 },
+    { bg: "blue.200", col: 4, row: 3 },
+    { bg: "blue.300", col: 1, row: 2 },
+    { bg: "blue.400", col: 3, row: 1 },
+    { bg: "blue.500", col: 2, row: 3 },
+    { bg: "blue.600", col: 4, row: 2 },
+  ]
+]
 
 const GalleryPage = () => {
+  const [layoutIndex, setLayoutIndex] = useState(0);
 
-  const photos = [] //figure out cloud storage mechanism and iterate through  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLayoutIndex(prevIndex => prevIndex == 0 ? 1 : 0);
+    }, 3000);
 
-    return (
-      <Box>
-        <Alert.Root status="error">
+    return () => clearInterval(interval); 
+  }, []);
+
+  return (
+    <Box>
+      <Alert.Root status="error">
         <Alert.Indicator />
         <Alert.Content>
           <Alert.Title>404 Error</Alert.Title>
@@ -19,17 +43,19 @@ const GalleryPage = () => {
           </Alert.Description>
         </Alert.Content>
       </Alert.Root>
-        <SimpleGrid columns={6} gap="40px" height={"100vh"} padding="20px">
-          <Box bg="gray.100" gridColumn="span 3" gridRow="span 3" />
-          <Box bg="gray.200" gridColumn="span 2" gridRow="span 2" />
-          <Box bg="gray.300" gridColumn="span 1" gridRow="span 2" />
-          <Box bg="gray.400" gridColumn="span 3" gridRow="span 1" />
-          <Box bg="gray.500" gridColumn="span 2" gridRow="span 2" />
-          <Box bg="gray.600" gridColumn="span 3" gridRow="span 2" />
-          <Box bg="gray.700" gridColumn="span 1.5." gridRow="span 2" />
-      </SimpleGrid>
-      </Box>
-    )
-}
 
-export default GalleryPage
+      <SimpleGrid columns={6} gap="40px" height="100vh" padding="20px">
+        {layouts[layoutIndex].map((item, idx) => (
+          <Box
+            key={idx}
+            bg={item.bg}
+            gridColumn={`span ${item.col}`}
+            gridRow={`span ${item.row}`}
+          />
+        ))}
+      </SimpleGrid>
+    </Box>
+  );
+};
+
+export default GalleryPage;
