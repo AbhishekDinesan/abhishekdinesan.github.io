@@ -19,8 +19,11 @@ function App() {
             display: 'flex',
             flexDirection: "column",
             minHeight: "100vh",
-            paddingLeft: "1em",
-            paddingRight: "1em"
+            paddingLeft: "clamp(0.5rem, 2vw, 2rem)",
+            paddingRight: "clamp(0.5rem, 2vw, 2rem)",
+            maxWidth: "1400px",
+            margin: "0 auto",
+            width: "100%"
           }}
         >
           <Navbar />

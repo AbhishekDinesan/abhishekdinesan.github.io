@@ -7,13 +7,15 @@ import {
 import InfoSection from "../components/infoSection";
 import Past from "../info/Past.json";
 import Present from "../info/Present.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BsFillSuitSpadeFill } from "react-icons/bs";
 import Timeline from "../info/Timeline.json";
+import "../styles/CardShuffle.css";
 
 const LandingPage = () => {
   const [selectedCard, setSelectedCard] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [isShuffling, setIsShuffling] = useState(true);
 
   const handleCardClick = (cardType) => {
     let selectedCardPayload = {}
@@ -38,9 +40,23 @@ const LandingPage = () => {
     }
   };
 
+  useEffect(() => {
+    // End shuffling animation after it completes
+    const timer = setTimeout(() => {
+      setIsShuffling(false);
+    }, 2000); // Match this with CSS animation duration + delays
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div>
-      <SimpleGrid marginBottom="3em" columns={{ base: 2, md: 3 }} spacing={10} paddingTop="2em">
+    <div style={{ padding: 'clamp(0.5rem, 2vw, 1rem)' }}>
+      <SimpleGrid 
+        marginBottom={{ base: "2em", md: "3em" }} 
+        columns={{ base: 1, sm: 2, md: 3 }} 
+        spacing={{ base: 6, md: 10 }} 
+        paddingTop={{ base: "1em", md: "2em" }}
+      >
         <InfoSection sectionHeading={"past"} infoArray={Past} />
         <InfoSection sectionHeading={"recent"} infoArray={Present} />
         <InfoSection sectionHeading={"future"} />
@@ -51,10 +67,10 @@ const LandingPage = () => {
         <Dialog.Backdrop />
         <Dialog.Positioner>
           {isOpen && selectedCard && (
-            <Dialog.Content>
+            <Dialog.Content maxWidth={{ base: "90vw", md: "600px" }}>
                 <Dialog.Header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <BsFillSuitSpadeFill size='5em' />
-                <Dialog.Title style={{ fontSize: '2em', textAlign: 'right' }}>
+                <BsFillSuitSpadeFill size='clamp(3em, 8vw, 5em)' />
+                <Dialog.Title style={{ fontSize: 'clamp(1.5em, 4vw, 2em)', textAlign: 'right' }}>
                   {selectedCard.year}
                 </Dialog.Title>
                 </Dialog.Header>
@@ -62,11 +78,11 @@ const LandingPage = () => {
               {selectedCard.elapsed === "true" ? (
                 <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
                   {Object.values(selectedCard.text).map((value, index) => (
-                    <li key={index} style={{ marginBottom: "8px" }}>{value}</li>
+                    <li key={index} style={{ marginBottom: "8px", fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>{value}</li>
                   ))}
                 </ul>
               ) : (
-                <div style={{ textAlign: 'center' }}>
+                <div style={{ textAlign: 'center', fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>
                 Nice try buddy - I'm not gonna reveal ALL my cards.
                 </div>
               )}
@@ -80,22 +96,29 @@ const LandingPage = () => {
       </Portal>
     </Dialog.Root>
 <div
+  className="card-container"
   style={{
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
-    gap: '1.5rem',
-    padding: '1rem 2rem',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(80px, 1fr))',
+    gap: 'clamp(0.75rem, 2vw, 1.5rem)',
+    padding: 'clamp(0.5rem, 2vw, 2rem)',
     width: '100%',
     boxSizing: 'border-box',
+    perspective: '1000px',
   }}
 >
-  {Object.values(CardTypes).map((card) => (
+  {Object.values(CardTypes).map((card, index) => (
     <Box
       key={card}
+      className={`playing-card ${isShuffling ? 'shuffling' : ''}`}
+      style={{
+        animationDelay: `${index * 0.08}s`,
+      }}
       _hover={{
-        transform: 'scale(1.1)',
+        transform: 'scale(1.1) translateZ(20px)',
         transition: 'transform 0.2s ease-in-out',
         cursor: 'pointer',
+        zIndex: 10,
       }}
       onClick={() => handleCardClick(card)}
     >
@@ -103,7 +126,9 @@ const LandingPage = () => {
     </Box>
   ))}
 </div>
-      <Text>A decade through a deck of cards (2022 - Present)</Text>
+      <Text fontSize={{ base: "xs", md: "sm" }} paddingY={{ base: 2, md: 4 }}>
+        A decade through a deck of cards (2022 - Present)
+      </Text>
     </div>
   );
 };

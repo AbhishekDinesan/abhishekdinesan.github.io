@@ -10,9 +10,13 @@ import photo from '../static/abhi.jpg'
 
 const PersonalPage = () => {
     return (
-        <div>
-            <Stack>
-            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} paddingTop="2em">
+        <div style={{ padding: 'clamp(0.5rem, 2vw, 1rem)' }}>
+            <Stack gap={{ base: 6, md: 8 }}>
+            <SimpleGrid 
+                columns={{ base: 1, md: 2 }} 
+                spacing={{ base: 6, md: 10 }} 
+                paddingTop={{ base: "1em", md: "2em" }}
+            >
                 <InfoSection
                     sectionHeading={
                         <Typewriter
@@ -28,10 +32,25 @@ const PersonalPage = () => {
                     infoArray={AboutMe}
                 />
                 <Center>
-                <Image maxHeight='350px' maxWidth='500px' src={photo} alt="Dan Abramov" display='flex' alignContent={'center'} justifyContent={'center'} />
+                <Image 
+                    maxHeight={{ base: '250px', md: '350px' }} 
+                    maxWidth={{ base: '100%', md: '500px' }} 
+                    width="100%"
+                    src={photo} 
+                    alt="Abhi Dinesan" 
+                    display='flex' 
+                    alignContent={'center'} 
+                    justifyContent={'center'}
+                    objectFit="cover"
+                    borderRadius="md"
+                />
                 </Center>
                 </SimpleGrid>
-                <SimpleGrid columns={{ base: 2, md: 3 }} spacing={10} paddingTop="2em">
+                <SimpleGrid 
+                    columns={{ base: 1, sm: 2, md: 3 }} 
+                    spacing={{ base: 6, md: 10 }} 
+                    paddingTop={{ base: "1em", md: "2em" }}
+                >
                     <InfoSection sectionHeading={"things that i enjoy"} infoArray={Hobbies} />
                     <InfoSection sectionHeading={"music i'd tell ya to listen to"} infoArray={Music} />
                     <InfoSection sectionHeading={"books i'd recently read"} infoArray={Books}/>

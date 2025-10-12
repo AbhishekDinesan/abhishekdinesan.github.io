@@ -1,0 +1,79 @@
+.card-container {
+  position: relative;
+}
+
+.playing-card {
+  position: relative;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.playing-card.shuffling {
+  animation: cardDeal 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  transform-origin: center center;
+}
+
+@keyframes cardDeal {
+  0% {
+    opacity: 0;
+    transform: translate(calc(-50vw + 50%), calc(-20vh + 50%)) scale(0.8) rotateY(-15deg);
+    z-index: 100;
+  }
+  
+  20% {
+    opacity: 1;
+    transform: translate(calc(-40vw + 40%), calc(-15vh + 40%)) scale(0.85) rotateY(-10deg);
+  }
+  
+  50% {
+    transform: translate(calc(-20vw + 20%), calc(-8vh + 20%)) scale(0.92) rotateY(-5deg);
+  }
+  
+  75% {
+    transform: translate(0, -5px) scale(0.98) rotateY(2deg);
+  }
+  
+  90% {
+    transform: translate(0, 2px) scale(1.02) rotateY(0deg);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1) rotateY(0deg);
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @keyframes cardDeal {
+    0% {
+      opacity: 0;
+      transform: translate(calc(-30vw + 50%), calc(-15vh + 50%)) scale(0.85) rotateY(-10deg);
+      z-index: 100;
+    }
+    
+    25% {
+      opacity: 1;
+      transform: translate(calc(-20vw + 35%), calc(-10vh + 35%)) scale(0.9) rotateY(-7deg);
+    }
+    
+    60% {
+      transform: translate(calc(-5vw + 10%), calc(-3vh + 10%)) scale(0.95) rotateY(-3deg);
+    }
+    
+    80% {
+      transform: translate(0, -3px) scale(0.99) rotateY(1deg);
+    }
+    
+    95% {
+      transform: translate(0, 1px) scale(1.01) rotateY(0deg);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translate(0, 0) scale(1) rotateY(0deg);
+      z-index: 1;
+    }
+  }
+}
+

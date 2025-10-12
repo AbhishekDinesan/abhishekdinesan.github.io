@@ -1,0 +1,26 @@
+{
+  "languages": [
+    "python",
+    "c++",
+    "javascript",
+    "sql"
+  ],
+  "frameworks": [
+    "postgresql",
+    "typescript",
+    "react",
+    "redis",
+    "kafka",
+    "pinecone",
+    "pytorch",
+    "tensorflow"
+  ],
+  "tools": [
+    "docker",
+    "kubernetes",
+    "git",
+    "aws",
+    "dapr"
+  ]
+}
+

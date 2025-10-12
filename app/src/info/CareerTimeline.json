@@ -1,0 +1,43 @@
+[
+  {
+    "year": "fall 2025",
+    "title": "software engineer intern",
+    "company": "tesla",
+    "description": "working on the future of automotives",
+    "type": "work",
+    "icon": "⚡"
+  },
+  {
+    "year": "winter 2025",
+    "title": "software engineer intern",
+    "company": "tradable bits",
+    "description": "developed features for fan engagement platform",
+    "type": "work",
+    "icon": "💼"
+  },
+  {
+    "year": "winter 2024",
+    "title": "software engineer intern",
+    "company": "ontario teachers' pension plan",
+    "description": "built payment reconciliation software processing $500m annually",
+    "type": "work",
+    "icon": "💼"
+  },
+  {
+    "year": "fall 2023",
+    "title": "cashier",
+    "company": "math coffee n' donuts",
+    "description": "life is expensive",
+    "type": "work",
+    "icon": "☕"
+  },
+  {
+    "year": "fall 2022",
+    "title": "started double degree",
+    "company": "uwaterloo & wilfrid laurier",
+    "description": "computer science & business administration",
+    "type": "education",
+    "icon": "🎓"
+  }
+]
+

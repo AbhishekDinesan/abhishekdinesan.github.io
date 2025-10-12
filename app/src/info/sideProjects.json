@@ -1,26 +1,30 @@
 [
     {
-        "title": "Cadence (In Progress)",
+        "title": "cadence (in progress)",
         "skills": ["React", "Flask", "Tailwind", "Docker"],
-        "description": "Full Stack Web Application that helps artists and songwriters write music. Integrated with Spotify.",
-        "link": "https://github.com/AbhishekDinesan/cadence."
+        "description": "full stack web application that helps artists and songwriters write music. integrated with spotify.",
+        "link": "https://github.com/AbhishekDinesan/cadence",
+        "githubRepo": "https://github.com/AbhishekDinesan/cadence"
     },
     {
-        "title": "LinkMe",
+        "title": "linkme",
         "skills": ["React", "Node", "Express", "PostgreSQL", "SQL", "Axios"],
-        "description": "Helping you and your friends create plans. Integrated with Google Oauth, Google Calendar & Ticketmaster.",
-        "link": "https://github.com/AbhishekDinesan/LinkMe."
+        "description": "helping you and your friends create plans. integrated with google oauth, google calendar & ticketmaster.",
+        "link": "https://github.com/AbhishekDinesan/LinkMe",
+        "githubRepo": "https://github.com/AbhishekDinesan/LinkMe"
     },
     {
-        "title": "Gritt",
+        "title": "gritt",
         "skills": ["React Native", "AWS Amplify"],
-        "description": "Helping people find their nearest gyms/fitneses centers using Google Places API",
-        "link": "https://github.com/AbhishekDinesan/Gritt."
+        "description": "helping people find their nearest gyms/fitneses centers using google places API",
+        "link": "https://github.com/AbhishekDinesan/Gritt",
+        "githubRepo": "https://github.com/AbhishekDinesan/Gritt"
     },
     {
-        "title": "Chess Engine",
-        "skills": ["C++, Windows Graphics"],
-        "description": "Chess Engine using Minimax Search Algorithm (School Project for OOP class, CS246)",
-        "link": "https://github.com/AbhishekDinesan/AIChessEngine."
+        "title": "chess engine",
+        "skills": ["C++", "Windows Graphics"],
+        "description": "chess engine using minimax search algorithm (school project for OOP class, CS246)",
+        "link": "https://github.com/AbhishekDinesan/AIChessEngine",
+        "githubRepo": "https://github.com/AbhishekDinesan/AIChessEngine"
     }
 ]

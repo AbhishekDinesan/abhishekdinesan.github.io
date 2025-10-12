@@ -33,24 +33,30 @@ const GalleryPage = () => {
   }, []);
 
   return (
-    <Box>
+    <Box padding={{ base: "0.5rem", md: "1rem" }}>
       <Alert.Root status="error">
         <Alert.Indicator />
         <Alert.Content>
-          <Alert.Title>404 Error</Alert.Title>
-          <Alert.Description>
+          <Alert.Title fontSize={{ base: "sm", md: "md" }}>404 Error</Alert.Title>
+          <Alert.Description fontSize={{ base: "xs", md: "sm" }}>
             Abhi is cooking...
           </Alert.Description>
         </Alert.Content>
       </Alert.Root>
 
-      <SimpleGrid columns={6} gap="40px" height="100vh" padding="20px">
+      <SimpleGrid 
+        columns={{ base: 2, sm: 3, md: 4, lg: 6 }} 
+        gap={{ base: "20px", md: "30px", lg: "40px" }} 
+        height={{ base: "50vh", md: "70vh", lg: "100vh" }} 
+        padding={{ base: "10px", md: "20px" }}
+      >
         {layouts[layoutIndex].map((item, idx) => (
           <Box
             key={idx}
             bg={item.bg}
-            gridColumn={`span ${item.col}`}
+            gridColumn={`span ${Math.min(item.col, 2)}`}
             gridRow={`span ${item.row}`}
+            minHeight={{ base: "80px", md: "100px" }}
           />
         ))}
       </SimpleGrid>
