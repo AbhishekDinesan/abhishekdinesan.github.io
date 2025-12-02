@@ -8,6 +8,7 @@ import PersonalPage from './pages/PersonalPage';
 import CareerPage from './pages/CareerPage';
 import IdeasPage from './pages/IdeasPage';
 import GalleryPage from './pages/GalleryPage';
+import RewrittenPage from './pages/RewrittenPage';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
               <Route path="/personal" element={<PersonalPage />} />
               <Route path="/career" element={<CareerPage />} />
               <Route path="/ideas" element={<IdeasPage />} />
+              <Route path="/ideas/rewritten" element={<RewrittenPage />} />
               <Route path="/gallery" element={<GalleryPage />} />
             </Routes>
           </div>

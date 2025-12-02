@@ -1,55 +1,41 @@
-import { Box, Heading, Separator, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { WritingCard } from "../components/Card";
 import { Typewriter } from 'react-simple-typewriter';
 
 const IdeasPage = () => {
   return (
-    <div style={{ padding: 'clamp(0.5rem, 2vw, 1rem)' }}>
-      <Box 
-        mb={{ base: 6, md: 8 }} 
-        paddingLeft={{ base: 2, md: 6, lg: 12 }}
-        paddingRight={{ base: 2, md: 4 }}
-      >
-        <Heading 
-          size={{ base: "lg", md: "xl" }} 
-          mb={{ base: 3, md: 4 }} 
-          textAlign="left"
-        >
-          Non-Fiction
-        </Heading>
-        <WritingCard 
-          mb={4} 
-          title="Computing the Cost of Computing on Income Inequality" 
-          description="an essay" 
-        />
-        <Heading 
-          size={{ base: "lg", md: "xl" }} 
-          mt={{ base: 3, md: 4 }} 
-          mb={{ base: 3, md: 4 }} 
-          textAlign="left"
+    <Box
+      as="section"
+      paddingY={{ base: 10, md: 16 }}
+      paddingX={{ base: 4, md: 8 }}
+      minHeight="70vh"
+      display="flex"
+      flexDirection="column"
+      gap={10}
+    >
+      <Box>
+        <Heading
+          as="h1"
+          size={{ base: "lg", md: "xl" }}
+          color="whiteAlpha.900"
         >
           Fiction
         </Heading>
-        <WritingCard 
-          title="Rewritten - Chapter I" 
-          description="a weird futuristic tragedy" 
-        />
+
       </Box>
-      <Box 
-        fontSize={{ base: "sm", md: "md" }} 
-        paddingX={{ base: 2, md: 4 }}
-      >
-        <Typewriter
-          words={['thoughts? feedback? concerns....feel free to reach out!']}
-          loop={0}
-          cursor
-          cursorStyle='_'
-          typeSpeed={80}
-          deleteSpeed={50}
-          delaySpeed={1200}
-        />
-      </Box>
-    </div>
+
+      <Flex direction="column" gap={4}>
+        <Link to="/ideas/rewritten" style={{ textDecoration: "none", display: "block", width: "100%" }}>
+          <WritingCard
+            eyebrow="Fiction"
+            title="Rewritten"
+            meta="View the synopsis."
+            isInteractive
+          />
+        </Link>
+      </Flex>
+    </Box>
   );
 };
 
