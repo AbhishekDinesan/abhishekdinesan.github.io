@@ -53,7 +53,7 @@ const PersonalPage = () => {
                 >
                     <InfoSection sectionHeading={"things that i enjoy"} infoArray={Hobbies} />
                     <InfoSection sectionHeading={"music i'd tell ya to listen to"} infoArray={Music} />
-                    <InfoSection sectionHeading={"books i'd recently read"} infoArray={Books}/>
+                    <InfoSection sectionHeading={"books i've recently read"} infoArray={Books}/>
                 </SimpleGrid>
             </Stack>
         </div>

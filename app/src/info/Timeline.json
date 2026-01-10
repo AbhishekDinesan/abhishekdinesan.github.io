@@ -4,9 +4,8 @@
     "year": 2022,
     "elapsed": "true",
     "text": {
-            "1": "Graduated high school, jumped off the porch and moved to Waterloo!",
-            "2": "Started 1A term of CS/BBA at UW & WLU",
-            "3": "Learned the foundations of math, computer science & business"
+            "1": "graduated high school and moved to waterloo",
+            "2": "started double degree at uwaterloo & wilfrid laurier"
         }   
     },
     {
@@ -14,8 +13,8 @@
     "year": 2023,
     "elapsed": "true",
     "text": {
-        "1": "Completed 1B & 2A terms of CS/BBA",
-        "2": "Worked as a cashier at Math Coffee n Diner, and volunteered as a Web Developer over the summer"
+        "1": "completed 1B & 2A terms of CS/BBA",
+        "2": "worked service jobs while building projects and gaining unpaid SWE experience"
     }
     },
     {
@@ -23,10 +22,8 @@
     "year": 2024,
     "elapsed": "true",
     "text": {
-        "1": "Completed 2B & 3A terms of CS/BBA",
-        "2": "Got my first big boy job at OTPP in Toronto. Learned about the corporate world and how to use a coffee machine.",
-        "3": "Worked part-time as a software engineer for a property-tech start-up",
-        "4": "Got pretty involved on campus, joined a lot of clubs and volunteered."
+        "1": "interned as Product Engineer at Ontario Teachers' Pension Plan (OTPP)",
+        "2": "took on some leadership roles on campus and learned more about AI & C/O"
     }
     },
     {
@@ -34,15 +31,17 @@
     "year": 2025,
     "elapsed": "true",
     "text": {
-        "1": "Completing 3B term of CS/BBA",
-        "2": "Moved out the Vancouver to work at Tradable Bits from Jan to April. Learned a lot about software engineering - and myself. Did a lot of travelling and had a blast.",
-        "3": "Moved out to California to work at Tesla from Sep to Dec. Hell of a year."
+        "1": "moved to Vancouver: Full-Stack Engineer at Tradable Bits",
+        "2": "moved to California: SWE Intern at Tesla"
     }
     },
     {
     "key": "GiCard6Spades", 
     "year": 2026,
-    "elapsed": "false"
+    "elapsed": "true",
+    "text": {
+        "1": "stay tuned..."
+    }
     },
     {
     "key": "GiCard7Spades",

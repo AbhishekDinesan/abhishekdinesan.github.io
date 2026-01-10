@@ -58,7 +58,7 @@ const LandingPage = () => {
         paddingTop={{ base: "1em", md: "2em" }}
       >
         <InfoSection sectionHeading={"past"} infoArray={Past} />
-        <InfoSection sectionHeading={"recent"} infoArray={Present} />
+        <InfoSection sectionHeading={"present"} infoArray={Present} />
         <InfoSection sectionHeading={"future"} />
       </SimpleGrid>
 
