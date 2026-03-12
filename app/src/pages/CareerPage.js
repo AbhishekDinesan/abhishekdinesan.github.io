@@ -13,7 +13,7 @@ const CareerPage = () => {
     ];
 
     const future = [
-        "incoming on the drive-alpha team @ nvidia",
+        "working on scaling autonomous vehicles",
     ];
 
     return (
