@@ -16,6 +16,7 @@ const LandingPage = () => {
   const [selectedCard, setSelectedCard] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const [isShuffling, setIsShuffling] = useState(true);
+  const cardsToRender = Object.values(CardTypes).filter((card) => card !== "GiCard10Spades");
 
   const handleCardClick = (cardType) => {
     let selectedCardPayload = {}
@@ -107,7 +108,7 @@ const LandingPage = () => {
     perspective: '1000px',
   }}
 >
-  {Object.values(CardTypes).map((card, index) => (
+  {cardsToRender.map((card, index) => (
     <Box
       key={card}
       className={`playing-card ${isShuffling ? 'shuffling' : ''}`}

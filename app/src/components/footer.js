@@ -1,6 +1,7 @@
 
 import { HStack, Icon, Link, Stack, Box, Text } from '@chakra-ui/react'
-import { SiGithub, SiGmail, SiLinkedin, SiSpotify, SiStrava } from 'react-icons/si'
+import { SiGithub, SiLinkedin, SiSpotify, SiStrava } from 'react-icons/si'
+import { BsTwitterX } from 'react-icons/bs'
 
 const Block = () => (
   <Box style={{ margin: 'clamp(10px, 2vw, 20px)', paddingTop: '20px' }}>
@@ -26,9 +27,9 @@ const Block = () => (
 )
 
 const socialLinks = [
-  { href: 'abhidines04@gmail.com', icon: <SiGmail /> },
   { href: 'https://github.com/AbhishekDinesan', icon: <SiGithub /> },
   { href: 'https://www.linkedin.com/AbhiDinesan', icon: <SiLinkedin /> },
+  { href: 'https://x.com/abhidinesan', icon: <BsTwitterX /> },
   { href: 'https://open.spotify.com/user/2wkr4k7yq75hf7lgpifpy0gbv', icon: <SiSpotify /> },
   { href: 'https://www.strava.com/athletes/156513757', icon: <SiStrava /> }
 ]

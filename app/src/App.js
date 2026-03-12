@@ -6,8 +6,8 @@ import Block from './components/footer'
 import LandingPage from './pages/LandingPage'
 import PersonalPage from './pages/PersonalPage';
 import CareerPage from './pages/CareerPage';
-import IdeasPage from './pages/IdeasPage';
-import GalleryPage from './pages/GalleryPage';
+import ThoughtsPage from './pages/ThoughtsPage';
+import ThoughtsPostPage from './pages/ThoughtsPostPage';
 import RewrittenPage from './pages/RewrittenPage';
 
 function App() {
@@ -32,10 +32,10 @@ function App() {
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="/personal" element={<PersonalPage />} />
+              <Route path="/personal/rewritten" element={<RewrittenPage />} />
               <Route path="/career" element={<CareerPage />} />
-              <Route path="/ideas" element={<IdeasPage />} />
-              <Route path="/ideas/rewritten" element={<RewrittenPage />} />
-              <Route path="/gallery" element={<GalleryPage />} />
+              <Route path="/thoughts" element={<ThoughtsPage />} />
+              <Route path="/thoughts/factory-floor-national-security" element={<ThoughtsPostPage />} />
             </Routes>
           </div>
           <Block />

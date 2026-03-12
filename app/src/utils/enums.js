@@ -23,8 +23,7 @@ const CardTypes = {
     six: "GiCard6Spades",
     seven: "GiCard7Spades",
     eight: "GiCard8Spades",
-    nine: "GiCard9Spades",
-    ten: "GiCard10Spades"
+    nine: "GiCard9Spades"
 }
 
 export {ButtonSizes, ButtonVariant, CardTypes}

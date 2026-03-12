@@ -20,10 +20,7 @@ const Navbar = () => {
         <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'career'} link="/career"/>
       </Box>
       <Box onClick={onClick}>
-        <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'ideas'} link="/ideas"/>
-      </Box>
-      <Box onClick={onClick}>
-        <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'photos'} link="/gallery"/>
+        <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'thoughts'} link="/thoughts"/>
       </Box>
     </>
   )
