@@ -16,7 +16,7 @@ const PersonalPage = () => {
 
     const sectionCards = [
         { sectionHeading: "things that i enjoy", infoArray: Hobbies },
-        { sectionHeading: "books i've recently read", infoArray: Books },
+        { sectionHeading: "books i've recently enjoyed", infoArray: Books },
         { sectionHeading: "music i'd tell ya to listen to", infoArray: Music },
         { sectionHeading: "foundational experiences", infoArray: Foundations }
     ];
