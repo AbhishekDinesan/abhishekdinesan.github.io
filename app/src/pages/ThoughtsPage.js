@@ -51,14 +51,13 @@ const ThoughtsPage = () => {
                 lineHeight="1.35"
                 color={titleColor}
               >
-                the factory floor has become a national security problem
+                domestic manufacturing capability has become a national security problem
               </Text>
               <Text color={muted} fontSize={{ base: "sm", md: "md" }} lineHeight="1.7" maxWidth="780px">
-                why industrial capability is quietly hollowing out, and why the intelligence layer in
-                manufacturing now matters as much as physical capacity.
+                why industrial capability is quietly hollowing out, and why it's important.
               </Text>
               <Text fontSize={{ base: "sm", md: "sm" }} color={titleColor}>
-                read essay ->
+                read essay {"->"}
               </Text>
             </Stack>
           </Box>

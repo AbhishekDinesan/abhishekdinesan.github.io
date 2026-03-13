@@ -1,0 +1,74 @@
+{
+  "postLabel": "post 001",
+  "title": "Domestic Manufacturing Capacity Has Become a National Security Problem",
+  "dek": "U.S. and Canadian firms still know how to make things, but we suffer from an idle machine crisis and ever-increasing lack of human capital. Rebuilding that capacity with AI and robotics is not just an economic project, it is a strategically critical geopolitical imperative.",
+  "meta": "abhi dinesan • september 2026 • manufacturing, ai, systems",
+  "openingParagraphs": [
+    "Growing up in my dad's machine shop, I was always fascinated by how fragile manufacturing supply chains are. That car in your garage? The airplane in the sky? The elevator in your building? I can almost guarantee it passed through a sketchy machine shop in a small town where the Walmart parking lot is the town square.",
+    "CNC Machinists & Toolmakers have spent decades learning how to cut metal with extraordinary precision. They can look at a technical drawing and tell you immediately where it will fail before the first piece is cut. It's a vast, fragmented industry - various machines, various processes, various ways to ruin a $40,000 block of steel. But at its core, the game is simple: turn a slab of steel into a more complex slab of steel with cool designs.",
+    "Listen, Jesus gets a lot of credit for turning water into wine. But CNC machining would probably give him a real headache.",
+    "The issue is - this work isn't glamorous. It's blue collar - symptoms include dirty finger nails and slipped back discs. Due to this, machinists push their children to become lawyers, software engineers and degenerate Kalshi traders.",
+    "The point is, nobody is inheriting this craft and we have an extensive shortage of labour. Multiply that story by thousands and you have the current state of North American precision manufacturing, from the Great Lakes corridor to the American Rust Belt."
+  ],
+  "stats": [
+    {
+      "value": "40K+",
+      "description": "estimated open precision-manufacturing roles across the U.S. and Canada."
+    },
+    {
+      "value": "~50%",
+      "description": "of institutional shop-floor knowledge can disappear in one retirement cycle."
+    },
+    {
+      "value": "$1T+",
+      "description": "annual value tied to U.S.-Canada supply chains exposed to geopolitical shocks."
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The Quiet Hollowing",
+      "paragraphs": [
+        "We didn't lose this capability in some dramatic collapse - no Bond villain, no smoking gun. We lost it the way you lose your marriage: slowly, then all at once, through offshoring, fragmented incentives, and the collective assumption that our partners would never turn against us.",
+        "Don't get me wrong, becoming a service economy has its perks. Great coffee shops. Lots of podcasts. Mogging and looksmaxxing. But it's an absolute catastrophe strategically.",
+        "What remains is often excellent - but thin. The shops still performing at world-class level are grey-haired and nearly impossible to scale.",
+        "And here's the part that doesn't make it into the policy briefs: you can announce a new factory in an afternoon. You cannot, by any act of Congress or executive order, instantly recreate the tacit layer of knowledge that keeps tolerances tight and schedules predictable. That stuff lives in people's hands. It retires with them."
+      ]
+    },
+    {
+      "heading": "When Supply Chains Become Weapons",
+      "paragraphs": [
+        "The geopolitics are no longer hypothetical - they're on the front page. Disruptions in critical inputs, concentrated refining, and chokepoints in advanced components have turned supply chains into strategic terrain. What once looked like efficient globalization now looks like a liability we cosigned without reading the fine print.",
+        "Precision manufacturing sits right in the center of this tension. It touches aerospace, semiconductors, energy systems, medical devices, and defense. If this layer stays brittle in the U.S. and Canada, both economies inherit that brittleness wholesale.",
+        "The current administration's solution? Tariffs.",
+        "Bold. Audacious. The kind of policy that would make a 19th-century isolationist weep with pride.",
+        "But tariffs alone can't bring manufacturing home. To actually move the needle on cost competitiveness, you'd need to devalue the dollar by at least 20% - a political death wish if there ever was one. And even if you did manage to reshore the demand, our shops don't have the capacity to absorb it.",
+        "We'd be pouring water into a cracked bucket and weeping with pride.",
+        "The solution is productivity. If we use AI & Robotics effectively, it will literally be criminal to send CNC jobs to anywhere but North America."
+      ]
+    },
+    {
+      "heading": "The Digitization Gap Is the Real Problem",
+      "paragraphs": [
+        "The people that run these shops are literally Boomers.",
+        "The most important information in a machine shop still lives in a guy named Dave's head, or in a notebook from 2009 that nobody can find. The result is an industry that's simultaneously too digital to manage manually and too analog to orchestrate algorithmically. It's stuck in the middle (like that Zedd song)."
+      ]
+    },
+    {
+      "heading": "Intelligence as Industrial Policy",
+      "paragraphs": [
+        "Other countries have figured this out. They're not just investing in factories. They're investing in the intelligence layer that makes factories adaptive - systems that encode expert judgment and compound it over time, so that capability doesn't walk out the door when an operator retires.",
+        "The U.S. and Canada have world-class AI talent. What we've been terrible at is pointing that talent at the problem. That talent is currently occupied building some B2B SaaS tool that nobody asked for and posting \"I got a Shopify internship, here's my entire morning routine\" content to their 47 followers.",
+        "The opportunity here is real: encode and scale the reasoning that lives on shop floors today, pair it with robotics and automation, and stop losing decades of expertise to biology. Detroit and Windsor, Pittsburgh and Hamilton - this is a cross-border infrastructure problem and it deserves a cross-border answer."
+      ]
+    },
+    {
+      "heading": "The Stakes",
+      "paragraphs": [
+        "If we don't fix this layer, we lose both industrial resilience and technological leverage - and we hand that leverage to someone who will absolutely use it against us.",
+        "If we do fix it, we unlock a foundation for the next generation of robotics, energy systems, aerospace, and biotech. The shops become the substrate. The substrate becomes the moat.",
+        "This isn't nostalgia for a vanishing America of hard hats and lunch pails. It's an infrastructure project - arguably the most important one we're not talking about loudly enough. The question isn't whether to rebuild. It's whether we do it now, while the knowledge is still alive in the hands of people who learned it, or later, when we're paying ten times the price to reconstruct something we let walk out the door."
+      ]
+    }
+  ],
+  "pullQuote": "\"This market is thick with both supply and demand, and nearly devoid of the infrastructure that can coordinate between them.\""
+}
