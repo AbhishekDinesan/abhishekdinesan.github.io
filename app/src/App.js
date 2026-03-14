@@ -35,6 +35,7 @@ function App() {
               <Route path="/personal/rewritten" element={<RewrittenPage />} />
               <Route path="/career" element={<CareerPage />} />
               <Route path="/thoughts" element={<ThoughtsPage />} />
+              <Route path="/thoughts/:slug" element={<ThoughtsPostPage />} />
               <Route path="/thoughts/factory-floor-national-security" element={<ThoughtsPostPage />} />
             </Routes>
           </div>

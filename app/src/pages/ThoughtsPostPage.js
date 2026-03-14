@@ -1,8 +1,17 @@
 import { Box, Heading, Stack, Text, Badge, SimpleGrid } from "@chakra-ui/react";
 import { useColorModeValue } from "../components/ui/color-mode";
-import post from "../info/ThoughtsFactoryFloor.json";
+import { useParams } from "react-router-dom";
+import factoryFloorPost from "../info/ThoughtsFactoryFloor.json";
+import comfortableIrrelevancePost from "../info/ThoughtsComfortableIrrelevance.json";
+
+const postsBySlug = {
+  "factory-floor-national-security": factoryFloorPost,
+  "comfortable-irrelevance-ai-abundance": comfortableIrrelevancePost
+};
 
 const ThoughtsPostPage = () => {
+  const { slug } = useParams();
+  const post = postsBySlug[slug] ?? factoryFloorPost;
   const pageBg = useColorModeValue("white", "#0a0a0b");
   const headingColor = useColorModeValue("gray.900", "white");
   const bodyColor = useColorModeValue("gray.700", "gray.300");
@@ -90,22 +99,6 @@ const ThoughtsPostPage = () => {
             </Box>
           ))}
 
-          <Box
-            borderLeft="3px solid"
-            borderColor={borderColor}
-            pl={4}
-            py={2}
-          >
-            <Text
-              color={bodyColor}
-              fontSize={{ base: "md", md: "lg" }}
-              fontStyle="italic"
-              lineHeight="1.8"
-            >
-              {post.pullQuote}
-            </Text>
-          </Box>
-
           {post.sections.slice(3).map((section, sectionIndex) => (
             <Box key={`section-bottom-${sectionIndex}`}>
               <Heading
@@ -124,6 +117,24 @@ const ThoughtsPostPage = () => {
               </Stack>
             </Box>
           ))}
+
+          {post.pullQuote ? (
+            <Box
+              borderLeft="3px solid"
+              borderColor={borderColor}
+              pl={4}
+              py={2}
+            >
+              <Text
+                color={bodyColor}
+                fontSize={{ base: "md", md: "lg" }}
+                fontStyle="italic"
+                lineHeight="1.8"
+              >
+                {post.pullQuote}
+              </Text>
+            </Box>
+          ) : null}
         </Stack>
       </Box>
     </Box>

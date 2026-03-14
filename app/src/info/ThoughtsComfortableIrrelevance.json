@@ -1,0 +1,95 @@
+{
+  "postLabel": "post 002",
+  "title": "Comfortable Irrelevance: AI, Abundance, and the New Lumpenproletariat as n→∞",
+  "dek": "AI isn't going to make you poor. It's going to make you….irrelevant?",
+  "meta": "abhi dinesan • march 2026 • ai, labour, political economy",
+  "openingParagraphs": [
+    "Am I just stringing together fancy words to sound smart in my titles? Probably.",
+    "If you live in the Valley, or frequent the digital Valley (X.com), you've probably heard the word 'abundance' in rather abundant quantities as of late. It's up there with ClaudeBots, Peptides and Frame-moggs as one of the most influential movements of a turbulent 2026.",
+    "As AI produces more Charlie Kirk edits at the expense of the South-Memphis's respiratory health, we've finally reached a point where foundational model's are projecting break-evens - and dare I say, having balance sheets that reflect those of a real business (Anthropic, at least).",
+    "Naturally, what started off as a cool gimmick that could produce haiku's on a whim has caused serious conversation about what the future of AI holds for humanity. Particularly with respect to labour, as young people face a catastrophic job market as is. In fact, the day I'm writing this, Canada shed 84,000 jobs this month and has a youth unemployment rate in the mid-teens.",
+    "Before I get into my thoughts, I want to preface all of this with the n→∞ problem. Even the sharpest visionaries of our time struggle to predict technological timelines with any confidence. A 22-year-old writing this while Zach Bryan's American Heartbreak plays in the background is certainly not going to have the specific answer. But I do believe these themes will play out - whether over decades, centuries, or millennia.",
+    "Anyways, there seems to be two prevailing camps in this space of labour and AI. There are the optimists, Musk, Altman and pretty much anyone who runs parallel Claude agents at a local Philz Coffee. They advocate that the future will be one of endless abundance where AI & robotics will render human labor to be optional, or even redundant. Hell, some are even telling you to stop saving for retirement altogether (RRSP → casino???).",
+    "Opposing this view is a niche, yet growing movement that predicts the creation of a \"permanent underclass\" - that upward mobility will become an ancient relic and that we're pretty much sleepwalking into mass poverty and civilizational collapse.",
+    "My thesis is simpler and, I think, more likely: AI is not going to impoverish the average person. In fact, it will probably drastically improve their life in all quantitative metrics. But it's going to make them irrelevant - and do it while keeping them reasonably fed, entertained, and comfortable.",
+    "At face value, that doesn't make for an interesting dystopia novel - but honestly, depending on the kinda person you are, this might be a sweet deal or scarier than your wildest dreams."
+  ],
+  "stats": [
+    {
+      "value": "~70%",
+      "description": "estimated share of current knowledge work tasks exposed to AI automation within a decade"
+    },
+    {
+      "value": "$7T+",
+      "description": "projected global productivity gains from AI by 2030, per Goldman Sachs"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The Deflationary Floor",
+      "paragraphs": [
+        "Start with the economics, because they're actually encouraging.",
+        "AI-driven productivity doesn't just make companies more profitable. It makes things cheaper. The cost of software, content, legal advice, medical diagnosis, customer service - these are already collapsing. Pair that with robotics compressing physical production costs and you get something economists call productivity deflation: the same dollar buys dramatically more.",
+        "It's critical to note that this is distinct from demand-induced deflation, like the factors that caused Japan's Lost Decades. Japan's stagnation wasn't driven by abundance - it was driven by a debt-bloated asset collapse in the early 90s that froze lending, crushed consumer confidence, and caused people to spend less even as prices fell.  I actually plan on writing about the interesting international implications of Japan's economy in a separate post - but for now, just know that productivity deflation runs the opposite direction.",
+        "Things get cheaper because we got better at making them, not because nobody wants them anymore.",
+        "This has happened before. The cost of artificial light fell 99% over two centuries. Food dropped from 50% of household income to under 10%. Each time, living standards for ordinary people rose even as the industries producing those goods were gutted.",
+        "So the floor holds. People will eat. They'll have phones with more intelligence in them than entire governments. Butterflies and roses and happy ever after - right?….right?"
+      ]
+    },
+    {
+      "heading": "Universal Basic Income",
+      "paragraphs": [
+        "To me, this isn't a matter of if, but when - and to what extent?",
+        "Productivity gains without wage income create a paradox: who buys the cheaper goods? As automation concentrates returns in capital rather than labor, consumer spending - the engine of modern economies - starts to splutter and give way.",
+        "A Universal Basic Income becomes less a moral argument and more a mechanical necessity, the valve that recirculates productivity gains back into demand and keeps the whole system from seizing up.",
+        "There's obviously going to be an inflationary effect, and the standard objection is that handing people money without a corresponding increase in goods just bids up prices. But that objection assumes a pre-AI supply constraint. If the productivity gains are real (that's an assumption I'm making), you get cheaper goods and a monetary floor simultaneously. The inflationary risk is real but probably overstated relative to the deflationary pressure running the other direction. Regardless, the specific mechanics of how much, to whom, and indexed to what, are genuinely unsolved. What seems clearer is the direction of travel.",
+        "Okay cool…so life get's dramatically better for everyone, and the feds give me a cheque? Sounds like a pretty sweet deal…right? right?",
+        "Here's where it gets complicated."
+      ]
+    },
+    {
+      "heading": "The Ceiling Disappears",
+      "paragraphs": [
+        "Certain things don't deflate. They actually appreciate. Mostly due to scarcity or human psychology.",
+        "Land. Geography. Status. Access to institutions that produce social capital. These become more valuable as AI-made substitutes flood every other market. The first rule of any economics course is that resources are finite. And this scarcity will likely be the defining constraint of an otherwise abundant future.",
+        "Think about it: do you think living in Brampton, Ontario will ever be as cool as living in Manhattan? And if you have been to Manhattan - good luck convincing your landlord to lower the rent because GPT-423 can make a marketing presentation. He's not listening. He's never listening.",
+        "So you end up with a two-faced economy: an abundant floor of cheap goods and entertainment, and an increasingly inaccessible ceiling of positional goods. The underclass isn't poor. But I sure wouldn't call them rich."
+      ]
+    },
+    {
+      "heading": "Marx Was Right About The Wrong Thing",
+      "paragraphs": [
+        "Although I'm personally not a fan of the guy, Karl Marx introduced a really interesting concept of the lumpenproletariat - a class defined not by poverty but by structural exclusion from productive relations. Not workers. Not even exploited workers. Just... surplus people who didn't really participate in the economy.",
+        "Marx dismissed them as politically useless. A \"passively rotting mass.\" Something my mother likes to call me (in malayalam, of course).",
+        "He wasn't wrong about their powerlessness - he was wrong about their conditions. His lumpen were poor. Ours will probably have Netflix (or Hulu or whatever) funded by some elementary form of UBI.",
+        "From a social science perspective, this makes things really interesting. Usually a group of relatively disenfranchised people revolt due to discomfort. But if this class has all their basic physiological needs met - do they revolt? Is it worth risking it all and protesting when you have microwavable popcorn, a personal humanoid, a hyper-intelligence chip in your brain and drones dropping off your Uber Eats order?",
+        "The Romans understood this. Bread and circuses kept a structurally unemployed urban population pacified, purposeless, and politically manageable for centuries. We just have better content - instead of clowns in a circus, we have clowns on an island.",
+        "You know…. Love Island."
+      ]
+    },
+    {
+      "heading": "Wilson's Warning",
+      "paragraphs": [
+        "(quick side note, it's incredible naive when folks disparage the usefulness of studying humanities - AI is going to create tons of problems that only people who really understand humanity can solve).",
+        "The sociologist William Julius Wilson spent decades studying post-industrial American cities and made the point that everyone else kept missing: the underclass isn't a cultural failure. It's a structural one.",
+        "When globalization gutted the Rust Belt, it didn't just remove jobs. It removed the entire social infrastructure organized around work - marriage patterns, community institutions, intergenerational networks, civic identity. Jobs are like the bottom block of a Jenga tower: pull them out and everything collapses together.",
+        "Wilson's ideas can be mapped onto AI displacement at a rather disturbing scale - and without geographic containment. Post-industrial decay was a regional tragedy. AI displacement is going to be a civilizational one, distributed across every sector, every city, every demographic that built its identity around cognitive contribution. Yes, even your cousin that's going to be a doctor.",
+        "The question isn't whether people will eat. Wilson already answered that. The question is whether the social contract can survive a world where a large portion of the population is economically surplus - not poor, just unnecessary.",
+        "And that's what makes this so interesting.",
+        "John Locke's social contract is the implicit agreement containing the terms and conditions among individuals to form a society and abide by its rules in exchange for mutual benefit. It's the underpinning of civilization - the reason we don't live as barbarically as nature probably intended us to.",
+        "But that contract was always written with a simple assumption underneath it: that people have something to contribute. AI may be the first technology to make that assumption obsolete for millions of people at once - and unlike your latest iOS terms and conditions, you won't even get a pop-up asking you to agree."
+      ]
+    },
+    {
+      "heading": "Comfortable Irrelevance",
+      "paragraphs": [
+        "So what does this actually look like?",
+        "Not poverty. Not the cinematic dystopia of a grey, starving underclass. Something subtler, and maybe more corrosive: a large portion of humanity living materially adequate lives - cheap food, extraordinary entertainment, on-demand access to more knowledge and capability than any king or emperor ever commanded - while being structurally locked out of agency, purpose, and the kind of participation in productive life that humans have championed for all of recorded history.",
+        "But who am I to say whether that's good or bad?",
+        "Purpose is, at its core, a psychological state. Maybe frictionless comfort is …..enough? Maybe the vast majority of people, given abundance without struggle, will find their own equilibrium. We are a rather resilient group after all. Perhaps this entire whole question will seem quaint to them.",
+        "What I do think is that as n → ∞, every conversation about AI, economics, politics, and society eventually collapses into the same question - the one that was always underneath all the others:"
+      ]
+    }
+  ],
+  "pullQuote": "\"What is the point of all this anyway?\""
+}
