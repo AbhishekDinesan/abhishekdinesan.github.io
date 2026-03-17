@@ -4,8 +4,9 @@
     "year": 2022,
     "elapsed": "true",
     "text": {
-            "1": "graduated high school and moved to waterloo",
-            "2": "started double degree at uwaterloo & wilfrid laurier"
+            "1": "graduated high school (CPSS) and moved to waterloo",
+            "2": "started double degree at uwaterloo & wilfrid laurier",
+            "3": "realized that I was a small fish in a large pond"
         }   
     },
     {
@@ -14,7 +15,8 @@
     "elapsed": "true",
     "text": {
         "1": "completed 1B & 2A terms of CS/BBA",
-        "2": "worked service jobs while building projects and gaining unpaid SWE experience"
+        "2": "worked service jobs while building projects and gaining unpaid SWE experience",
+        "3": "lowkey this year really sucked, but what are highs without lows?"
     }
     },
     {
@@ -22,8 +24,9 @@
     "year": 2024,
     "elapsed": "true",
     "text": {
-        "1": "interned as Product Engineer at Ontario Teachers' Pension Plan (OTPP)",
-        "2": "took on some leadership roles on campus and learned more about AI & C/O"
+        "1": "WOHOO, got my first REAL internship as a Product Engineer at Ontario Teachers' Pension Plan (OTPP). Learned to use a coffee machine with proficiency and grace.",
+        "2": "took on some leadership roles on campus: Student Representative for the Faculty of Computer Science, Math Orientation Leader, Double Degree Mentor etc.",
+        "3": "picked up my old guitar for the first time in years, wrote some mid songs and performed em"
     }
     },
     {
@@ -31,8 +34,9 @@
     "year": 2025,
     "elapsed": "true",
     "text": {
-        "1": "moved to Vancouver: Full-Stack Engineer at Tradable Bits",
-        "2": "moved to California: SWE Intern at Tesla"
+        "1": "moved to Vancouver to be a Full-Stack Engineer at Tradable Bits. Broke production a few times (but learned a lot?!?). Also, Vancouver is my city.",
+        "2": "moved to California to be a SWE Intern at Tesla. Made it to the big leagues and secured a long term contract",
+        "3": "very eventful year, learned a lot about myself. Starting reading more, running, and attempting more sidequests."
     }
     },
     {
@@ -40,9 +44,9 @@
     "year": 2026,
     "elapsed": "true",
     "text": {
-        "1": "undergraduate research @ uwaterloo to optimize pediatric scheduling",
-        "2": "returning to tesla to work on xAI Integration",
-        "3": "decentralized manufacturing"
+        "1": "doing some undergraduate research @ uwaterloo to optimize pediatric scheduling for KidsAbility Canada.",
+        "2": "spending the summer scaling autonomous vehicles @ NVIDIA. Took a bit of a risk here.",
+        "3": "building a solution to mobilize western precision manufacturing. More on that later."
     }
     },
     {
