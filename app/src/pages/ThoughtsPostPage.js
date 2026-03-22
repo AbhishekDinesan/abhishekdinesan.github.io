@@ -1,12 +1,14 @@
-import { Box, Heading, Stack, Text, Badge, SimpleGrid } from "@chakra-ui/react";
+import { Box, Heading, Stack, Text, SimpleGrid } from "@chakra-ui/react";
 import { useColorModeValue } from "../components/ui/color-mode";
 import { useParams } from "react-router-dom";
 import factoryFloorPost from "../info/ThoughtsFactoryFloor.json";
 import comfortableIrrelevancePost from "../info/ThoughtsComfortableIrrelevance.json";
+import siliconShieldPost from "../info/ThoughtsSiliconShield.json";
 
 const postsBySlug = {
   "factory-floor-national-security": factoryFloorPost,
-  "comfortable-irrelevance-ai-abundance": comfortableIrrelevancePost
+  "comfortable-irrelevance-ai-abundance": comfortableIrrelevancePost,
+  "silicon-shield-sacred-mountain": siliconShieldPost
 };
 
 const ThoughtsPostPage = () => {
@@ -36,9 +38,6 @@ const ThoughtsPostPage = () => {
         padding={{ base: 3, md: 6 }}
       >
         <Stack gap={{ base: 5, md: 6 }}>
-          <Badge width="fit-content" colorPalette="gray" variant="subtle">
-            {post.postLabel}
-          </Badge>
           <Heading
             color={headingColor}
             fontSize={{ base: "2xl", md: "4xl" }}
@@ -61,11 +60,22 @@ const ThoughtsPostPage = () => {
           </Text>
 
           <Stack gap={5}>
-            {post.openingParagraphs.map((paragraph, index) => (
-              <Text key={`opening-${index}`} color={bodyColor} fontSize={{ base: "sm", md: "md" }} lineHeight="1.95">
-                {paragraph}
-              </Text>
-            ))}
+            {post.openingParagraphs.map((item, index) =>
+              typeof item === "object" && item.heading ? (
+                <Heading
+                  key={`opening-${index}`}
+                  color={headingColor}
+                  fontSize={{ base: "xl", md: "2xl" }}
+                  mt={2}
+                >
+                  {item.heading}
+                </Heading>
+              ) : (
+                <Text key={`opening-${index}`} color={bodyColor} fontSize={{ base: "sm", md: "md" }} lineHeight="1.95">
+                  {item}
+                </Text>
+              )
+            )}
           </Stack>
 
           <SimpleGrid columns={1} gap={3}>
@@ -90,9 +100,9 @@ const ThoughtsPostPage = () => {
                 {section.heading}
               </Heading>
               <Stack gap={4}>
-                {section.paragraphs.map((paragraph, paragraphIndex) => (
-                  <Text key={`section-top-${sectionIndex}-paragraph-${paragraphIndex}`} color={bodyColor} fontSize={{ base: "sm", md: "md" }} lineHeight="1.95">
-                    {paragraph}
+                {section.paragraphs.map((p, paragraphIndex) => (
+                  <Text key={`section-top-${sectionIndex}-paragraph-${paragraphIndex}`} color={bodyColor} fontSize={{ base: "sm", md: "md" }} lineHeight="1.95" fontStyle={typeof p === "object" && p.italic ? "italic" : undefined}>
+                    {typeof p === "object" ? p.text : p}
                   </Text>
                 ))}
               </Stack>
@@ -109,9 +119,9 @@ const ThoughtsPostPage = () => {
                 {section.heading}
               </Heading>
               <Stack gap={4}>
-                {section.paragraphs.map((paragraph, paragraphIndex) => (
-                  <Text key={`section-bottom-${sectionIndex}-paragraph-${paragraphIndex}`} color={bodyColor} fontSize={{ base: "sm", md: "md" }} lineHeight="1.95">
-                    {paragraph}
+                {section.paragraphs.map((p, paragraphIndex) => (
+                  <Text key={`section-bottom-${sectionIndex}-paragraph-${paragraphIndex}`} color={bodyColor} fontSize={{ base: "sm", md: "md" }} lineHeight="1.95" fontStyle={typeof p === "object" && p.italic ? "italic" : undefined}>
+                    {typeof p === "object" ? p.text : p}
                   </Text>
                 ))}
               </Stack>

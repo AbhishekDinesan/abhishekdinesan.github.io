@@ -1,15 +1,24 @@
-import { Box, Stack, Text } from "@chakra-ui/react";
+import { Box, HStack, Stack, Text, Icon } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { useColorModeValue } from "../components/ui/color-mode";
+import { LuPin } from "react-icons/lu";
 import factoryFloorPost from "../info/ThoughtsFactoryFloor.json";
 import comfortableIrrelevancePost from "../info/ThoughtsComfortableIrrelevance.json";
+import siliconShieldPost from "../info/ThoughtsSiliconShield.json";
 
 const posts = [
   {
     slug: "comfortable-irrelevance-ai-abundance",
     readTime: "8 min read",
     preview: "why abundance may raise living standards while making many people economically unnecessary.",
+    pinned: true,
     ...comfortableIrrelevancePost
+  },
+  {
+    slug: "silicon-shield-sacred-mountain",
+    readTime: "12 min read",
+    preview: "TSMC, silicon shields, and why Canada needs a sacred mountain.",
+    ...siliconShieldPost
   },
   {
     slug: "factory-floor-national-security",
@@ -57,14 +66,17 @@ const ThoughtsPage = () => {
               _hover={{ background: hoverBg, borderColor: muted }}
             >
               <Stack gap={3} textAlign="left">
-                <Text
-                  fontSize={{ base: "xs", md: "sm" }}
-                  textTransform="uppercase"
-                  letterSpacing="0.08em"
-                  color={muted}
-                >
-                  {`${post.postLabel} • ${post.meta.split("•")[1]?.trim() ?? ""} • ${post.readTime}`}
-                </Text>
+                <HStack gap={1}>
+                  {post.pinned && <Icon size="xs" color={muted}><LuPin /></Icon>}
+                  <Text
+                    fontSize={{ base: "xs", md: "sm" }}
+                    textTransform="uppercase"
+                    letterSpacing="0.08em"
+                    color={muted}
+                  >
+                    {`${post.meta.split("•")[1]?.trim() ?? ""} • ${post.readTime}`}
+                  </Text>
+                </HStack>
                 <Text
                   fontSize={{ base: "lg", md: "2xl" }}
                   lineHeight="1.35"
