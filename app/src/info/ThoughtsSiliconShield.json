@@ -9,7 +9,7 @@
     "In all seriousness, this project does address a very probable shortage of chips for compute (FSD, Optimus, Digital Optimus etc.) in the near future, but may be one of his most difficult technical challenges yet. This, however, didn't stop a bunch of X users from becoming silicon strategists overnight.",
     "With all this renewed focus on fabs, I figured it was worth exploring the story behind the world's most important company, that somehow manages to fall under the mainstream radar. And how silicon, despite being an inert metalloid, may hold more geopolitical spark than any nuclear arsenal.",
     {"heading": "The Origin Story"},
-    "In 1958, Jack Kilby, a 6'6 engineer from the mean streets of Missouri, ran into a problem that would go on to define an entire generation of Instagram highlight reels.",
+    "In 1958, Jack Kilby, a 6'6 engineer from the mean streets of Missouri, ran into a problem that would go on to plague an entire generation of Instagram highlights.",
     "He didn't have enough vacation time.",
     "The newest hire at Texas Instruments, Kilby had to spend the summer working while everyone else was on break. Luckily for us, instead of quitting and becoming an NBA Power Forward, he used his time to develop a small thing called the integrated circuit — multiple transistors on a single piece of semiconductor. This is kinda groundbreaking.",
     "However, like a tech startup with an Instagram UGC presence, the actual product was... suspect. Genuinely revolutionary for its time, but it relied on germanium, with hand-soldered wires connecting components. A world-breaking proof of concept, but it really couldn't scale. Over in California though, Robert Noyce independently figured out how to build the same thing on silicon, with aluminum traces printed directly onto the chip - this version could actually be mass-produced.",
@@ -24,8 +24,8 @@
     "It's worth mentioning that chip manufacturing and chip architecture are completely different beasts. Manufacturing is a materials science and process engineering problem - you're optimizing for photolithography and chemical deposition while architecture is a computer science/design problem that revolves around parallelism, and compiler-hardware co-design. Chang realized these require different institutional cultures, different talent pipelines, different capital structures, and that specializing in manufacturing would be potentially very lucrative.",
     "The result is what's known as the foundry model - a fundamental separation of design and manufacturing. This allows anyone (NVIDIA, Apple, Etched, you name it) to design chips and have TSMC build them.",
     "So why doesn't TSMC architect its own chips?",
-    "Well, as a chip designer, you don't really want to worry about your manufacturer also being your competitor. Intel actually did the opposite - tried to be both designer and foundry - which fundamentally backfired because nobody wants to hand their IP to someone who's also selling a competing product. In some ways, trust is the product here. And trust compounds on the scale of decades.",
-    "Today, TSMC holds roughly 60% of the global foundry market at the mid-level. At advanced nodes — sub-7nm — it's 92.5%. Samsung, the only real competitor, holds roughly 7%. This isn't a competitive market. It's a monopoly that's occasionally sympathetic."
+    "Well, as a chip designer, you don't really want to worry about your manufacturer also being your competitor. Intel actually did this - tried to be both designer and foundry - which fundamentally backfired because nobody wants to hand their IP to someone who's also selling a competing product. In some ways, trust is the product here. And trust compounds on the scale of decades.",
+    "Today, TSMC holds roughly 60% of the global foundry market at the mid-level. At advanced nodes (sub-7nm), it's 92.5%. Samsung, the only real competitor, holds roughly 7%. This isn't a competitive market. It's a monopoly that's occasionally sympathetic."
   ],
   "stats": [
     {
@@ -45,17 +45,19 @@
     {
       "heading": "So What Sustains Taiwanese Excellence in This Space?",
       "paragraphs": [
-        "Start with talent. The top percentile of National Taiwan University - the country's most elite engineering school - goes to TSMC. Not a B2B YC Saas. Not Google. TSMC. An entire nation's best technical minds have been funneling into one company for decades. That produces institutional knowledge that isn't readily available on the internet or captured in textbooks. It's the kind of knowledge that lives in people, not documentation. You can't offshore it. You can't poach it at scale. And you definitely can't replicate it by opening a fab in Arizona and hoping for the best.",
-        "Then there's the capex flywheel. TSMC invests billions in leading-edge fabs. Those fabs are unprofitable for the first few years as bleeding-edge manufacturing has bleeding-edge costs. But process improvements make them increasingly efficient, and after five years of depreciation, they're cash machines that fund the next generation. This means competitors face a brutal catch-22: they have to bleed money at the frontier while TSMC funds its frontier R&D with profits from mature nodes that are already paid off. By the time you catch up to where TSMC was, they've moved on. It's a treadmill where TSMC set the speed and everyone else is trying not to fall off.",
-        "And then there's trust. Apple built a dedicated TSMC plant — $9 billion, 6,000 employees, 11 months - with, in Apple's own words, \"no backup plan.\" Every major fabless company (Qualcomm, AMD, NVIDIA, MediaTek) has a version of the same dependency. These aren't vendor relationships. They're marriages. And they all trace back to the structural insight Chang identified in 1987: if you never compete with your customers, your customers never have a reason to leave."
+        "Start with talent. The top percentile of National Taiwan University (the country's most elite engineering school) goes to TSMC. Not a B2B YC Saas. Not Google. TSMC. An entire nation's best technical minds have been funneling into one company for decades. That produces institutional knowledge that isn't readily available on the internet or captured in textbooks. It's the kind of knowledge that lives in people, not documentation. You can't offshore it. You can't poach it at scale. And you probably can't replicate it by opening a fab in Arizona and hoping for the best. This is very intentional.",
+        "Then there's the CAPEX flywheel. TSMC invests billions in leading-edge fabs. Those fabs are unprofitable for the first few years as bleeding-edge manufacturing has costs that will make you bleed. But process improvements make them increasingly efficient, and after five years of depreciation, they're cash machines that fund the next generation. This means competitors face a brutal catch-22: they have to bleed money on frontier-tech while TSMC funds its frontier R&D with profits from older machines that are already paid off. By the time you catch up to where TSMC was, they've moved on. It's the Devil's Treadmill.",
+        "And then there's trust. Apple built a dedicated TSMC plant - $9 billion, 6,000 employees, 11 months - with, in Apple's own words, \"no backup plan.\" Every major fabless company (Qualcomm, AMD, NVIDIA) has a version of the same dependency. These aren't vendor relationships.",
+        "They are marriages with no prenup.",
+         "And they all trace back to the insight Chang saw in 1987: if you never compete with your customers, your customers never have a reason to leave."
       ]
     },
     {
       "heading": "The Machine That Makes the Machine",
       "paragraphs": [
-        "Now let's zoom out from TSMC to the supply chain above it, because the real story is even wilder.",
+        "Now let's zoom out from TSMC to the supply chain above it, because this stuff is even wilder.",
         "To produce chips at 5nm or below, you need Extreme Ultraviolet (EUV) lithography. Exactly one company on Earth makes EUV machines: ASML, based in the Netherlands. From what I can tell, this is not even an exaggeration - literally 100% market share. There is no second source. Each machine costs roughly $350 million, weighs multiple tons, and is arguably the most complex device ever manufactured by humans.",
-        "But ASML itself is dependent on components it can't make alone. The lasers come from Cymer, an American company. The precision optics - glass so perfect it's measured in atoms of deviation — come from Zeiss in Germany. So the supply chain for a chip made in Taiwan runs through the Netherlands, the United States, and Germany before a single wafer is exposed.",
+        "But ASML itself is dependent on components it can't make alone. The lasers come from Cymer, an American company. The precision optics, glass so precise it's measured in terms of atoms, come from Zeiss in Germany. So the supply chain for a chip made in Taiwan runs through the Netherlands, the United States, and Germany before a single wafer is exposed.",
         "This is the real chokepoint - and it's where export controls bite. China is banned from purchasing EUV machines. So SMIC, China's most advanced foundry, is stuck at 7nm using older DUV (Deep Ultraviolet) lithography. The ceiling isn't talent or capital. It's that one Dutch company, dependent on one American laser company and one German glass company, won't sell them the machine.",
         "The entire geopolitical semiconductor standoff runs through a supply chain that fits on a napkin.",
         "Which raises an obvious question: if ASML makes the only machine that can produce advanced chips, why doesn't ASML just make the chips themselves? The answer loops back to everything Morris Chang figured out in 1987. Chip manufacturing isn't a hardware procurement problem - it's a process engineering discipline. ASML builds the scalpel. TSMC has spent four decades mastering surgery. Owning the tool doesn't give you the hands.",
@@ -66,21 +68,20 @@
       "heading": "護國神山 — The Sacred Mountain",
       "paragraphs": [
         "TSMC represents roughly 25% of Taiwan's GDP. 30% of the Taiwanese stock market. The company isn't part of the economy. It is the economy.",
-        "And because of this, TSMC has taken on a role that no corporation should have to carry. The idea is called the Silicon Shield: because the entire global economy depends on chips made in Taiwan, major powers - especially the U.S. - would be forced to intervene if China attacked. The concentration of advanced manufacturing on one island isn't a vulnerability. It's a hostage situation. And the hostage is every iPhone, every data center, and worst of all, every F-35.",
-        "In Taiwan, this isn't some abstract think-tank concept. It's folk wisdom. The Taiwanese term for the company is 護國神山 — \"the mountain that protects the nation.\" That's not an analyst's term from a Goldman Sachs research note. That's what ordinary people call a chip manufacturer. A national security strategy that nobody voted for, run by a company that never signed up for the job.",
-        "TSMC's own former R&D executive said it plainly: \"Why would I want to stand on the front line of a war and be used as a shield?\""
+        "And because of this, TSMC has taken on a role that no corporation should have to carry. The idea is called the Silicon Shield: because the entire global economy depends on chips made in Taiwan, major powers (cough, cough, Uncle Sam) would be forced to intervene if China attacked.",
+        "In Taiwan, this isn't some abstract think-tank concept. It's folk wisdom. The Taiwanese term for the company is 護國神山 — \"the mountain that protects the nation.\" That's what ordinary people call a chip manufacturer. A national security strategy that nobody voted for, run by a company that never signed up for the job."
       ]
     },
     {
       "heading": "The Lesson Isn't About Chips",
       "paragraphs": [
         "The TSMC story is usually told as a semiconductor story, or a geopolitics story, or a Taiwan story. It's all of those. But the deeper lesson is about something most countries - including ours - have been sleepwalking through for decades.",
-        "Canada should be paying very close attention.",
-        "In the last year, we've had a president publicly muse about annexing us, threaten crippling tariffs on our exports, and treat our sovereignty as a negotiating tactic. And yet our industrial strategy still amounts to exporting raw resources and importing finished goods, as if nothing has changed.",
+        "Canada, in particular, should be paying very close attention.",
+        "In the last year, we've had a president publicly muse about annexing us, threaten crippling tariffs on our exports, and treat our sovereignty as a negotiating tactic. And yet our industrial strategy still amounts to exporting raw resources and importing finished goods, as if nothing has changed. For Christ's sake, we sell oil to the U.S at a discount because we lack refinement capacity.",
         "Taiwan - a small island with a hostile neighbour 100 miles offshore - looked at the world and decided to build something so valuable that the global economy couldn't afford to let it fall. We are a G7 nation with extraordinary raw materials, a world-class engineering pipeline, and no equivalent bet.",
-        "Our machine shops are closing. Our skilled trades pipeline is thinning. We don't have a sacred mountain because we never bothered to build one - and unlike Taiwan, we can't claim we didn't have the resources."
+        "Our machine shops are closing. Our skilled trades pipeline is thinning. We don't have a sacred mountain because we never bothered to build one. Beauracracy, incompetance and detrimental special interests - we seem to be the melting pot for all three."
       ]
     }
   ],
-  "pullQuote": "\"The sacred mountain doesn't have to be made of silicon. But it's gotta be made of something.\""
+  "pullQuote": "\"Our sacred mountain doesn't have to be made of silicon. But good god, let's make it out of something.\""
 }
