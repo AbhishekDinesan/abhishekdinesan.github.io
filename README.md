@@ -1,5 +1,5 @@
 ## My Personal Website
 
-https://abhishekdinesan.github.io/
+abhidinesan.com
 
 Built with React.js
