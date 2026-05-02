@@ -1,6 +1,6 @@
 import './App.css';
 import { Provider} from "./components/ui/provider"
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/navbar'
 import Block from './components/footer'
 import LandingPage from './pages/LandingPage'
@@ -36,7 +36,6 @@ function App() {
               <Route path="/career" element={<CareerPage />} />
               <Route path="/thoughts" element={<ThoughtsPage />} />
               <Route path="/thoughts/:slug" element={<ThoughtsPostPage />} />
-              <Route path="/thoughts/factory-floor-national-security" element={<ThoughtsPostPage />} />
             </Routes>
           </div>
           <Block />

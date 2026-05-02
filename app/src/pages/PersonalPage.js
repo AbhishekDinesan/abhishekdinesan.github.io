@@ -9,6 +9,7 @@ import Books from "../info/Books.json";
 import Hobbies from "../info/Hobbies.json"
 import Foundations from "../info/Foundations.json"
 import photo from '../static/abhi.jpg'
+import Seo from "../components/Seo";
 
 
 const PersonalPage = () => {
@@ -35,6 +36,11 @@ const PersonalPage = () => {
 
     return (
         <div style={{ padding: 'clamp(0.5rem, 2vw, 1rem)' }}>
+            <Seo
+                title="Personal"
+                description="A personal snapshot of Abhi Dinesan: interests, books, music, and formative experiences."
+                path="/personal"
+            />
             <Stack gap={{ base: 6, md: 8 }}>
             <SimpleGrid 
                 columns={{ base: 1, md: 2 }} 

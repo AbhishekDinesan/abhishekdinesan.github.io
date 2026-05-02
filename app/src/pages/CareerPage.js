@@ -1,4 +1,5 @@
 import { Box, Text, SimpleGrid, Stack, HStack, Badge } from "@chakra-ui/react";
+import Seo from "../components/Seo";
 
 const CareerPage = () => {
     const past = [
@@ -18,6 +19,11 @@ const CareerPage = () => {
 
     return (
         <div style={{ padding: 'clamp(0.5rem, 2vw, 1rem)' }}>
+            <Seo
+                title="Career"
+                description="Career timeline and current focus areas for Abhi Dinesan across product engineering, AI systems, and applied research."
+                path="/career"
+            />
             <Stack gap={{ base: 6, md: 8 }} paddingTop={{ base: "1em", md: "2em" }}>
                 <Box textAlign="center">
                     <Text

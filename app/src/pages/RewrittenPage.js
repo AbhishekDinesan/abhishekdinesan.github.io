@@ -1,6 +1,7 @@
 import { Box, Heading, Stack, Text } from "@chakra-ui/react";
 import { useColorModeValue } from "../components/ui/color-mode";
 import RewrittenSynopsis from "../info/RewrittenSynopsis.json";
+import Seo from "../components/Seo";
 
 const emphasizeWord = (paragraph, word, paragraphIndex) => {
   const lowerWord = word.toLowerCase();
@@ -40,8 +41,14 @@ const RewrittenPage = () => {
       paddingX={{ base: 4, md: 12 }}
       textAlign="left"
     >
+      <Seo
+        title="Rewritten Synopsis"
+        description="Synopsis and world-building notes for Rewritten by Abhi Dinesan."
+        path="/personal/rewritten"
+      />
       <Box maxWidth="900px">
         <Heading
+          as="h1"
           size={{ base: "lg", md: "xl" }}
           color={headingColor}
           mb={6}

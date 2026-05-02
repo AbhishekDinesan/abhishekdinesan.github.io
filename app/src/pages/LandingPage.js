@@ -10,6 +10,7 @@ import Present from "../info/Present.json";
 import { useState, useEffect } from "react";
 import { BsFillSuitSpadeFill } from "react-icons/bs";
 import Timeline from "../info/Timeline.json";
+import Seo from "../components/Seo";
 import "../styles/CardShuffle.css";
 
 const LandingPage = () => {
@@ -52,6 +53,11 @@ const LandingPage = () => {
 
   return (
     <div style={{ padding: 'clamp(0.5rem, 2vw, 1rem)' }}>
+      <Seo
+        title="Abhi Dinesan"
+        description="Production-grade products for private equity, media, and big tech. Portfolio, writing, and ongoing work across AI and product engineering."
+        path="/"
+      />
       <SimpleGrid 
         marginBottom={{ base: "2em", md: "3em" }} 
         columns={{ base: 1, sm: 2, md: 3 }} 
