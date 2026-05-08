@@ -4,14 +4,12 @@ import { useParams } from "react-router-dom";
 import Seo from "../components/Seo";
 import factoryFloorPost from "../info/ThoughtsFactoryFloor.json";
 import comfortableIrrelevancePost from "../info/ThoughtsComfortableIrrelevance.json";
-import siliconShieldPost from "../info/ThoughtsSiliconShield.json";
 import taxPenthousePost from "../info/ThoughtsTaxPenthouse.json";
 
 const postsBySlug = {
   "tax-penthouse-not-payroll": taxPenthousePost,
   "factory-floor-national-security": factoryFloorPost,
-  "comfortable-irrelevance-ai-abundance": comfortableIrrelevancePost,
-  "silicon-shield-sacred-mountain": siliconShieldPost
+  "comfortable-irrelevance-ai-abundance": comfortableIrrelevancePost
 };
 
 const renderSectionParagraph = (paragraph, key, colors) => {
