@@ -36,6 +36,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://abhishekdinesan.github.io/thoughts/silicon-shield-sacred-mountain</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://abhishekdinesan.github.io/thoughts/factory-floor-national-security</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

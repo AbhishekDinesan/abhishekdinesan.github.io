@@ -6,6 +6,7 @@ import { LuPin } from "react-icons/lu";
 import Seo from "../components/Seo";
 import factoryFloorPost from "../info/ThoughtsFactoryFloor.json";
 import comfortableIrrelevancePost from "../info/ThoughtsComfortableIrrelevance.json";
+import siliconShieldPost from "../info/ThoughtsSiliconShield.json";
 import taxPenthousePost from "../info/ThoughtsTaxPenthouse.json";
 
 const posts = [
@@ -24,6 +25,13 @@ const posts = [
     pinned: true,
     category: "tech",
     ...comfortableIrrelevancePost
+  },
+  {
+    slug: "silicon-shield-sacred-mountain",
+    readTime: "12 min read",
+    preview: "TSMC, silicon shields, and why Canada needs a sacred mountain.",
+    category: "tech",
+    ...siliconShieldPost
   },
   {
     slug: "factory-floor-national-security",
