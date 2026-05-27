@@ -9,12 +9,12 @@ const CareerPage = () => {
     ];
 
     const present = [
-        "undergraduate research @ university of waterloo with prof abouee-mehrizi",
+        "scaling autonomous vehicles @ nvidia",
         "tinkering with AI-driven CNC machining"
     ];
 
     const future = [
-        "working on scaling autonomous vehicles",
+        "something to make tmrw better than today",
     ];
 
     return (

@@ -1,8 +1,10 @@
 import InfoSection from "../components/infoSection"
+import VinylMusicCard from "../components/VinylMusicCard"
+import BookCard from "../components/BookCard"
+import PolaroidHobbiesCard from "../components/PolaroidHobbiesCard"
+import TrophyShelfCard from "../components/TrophyShelfCard"
 import {Stack, SimpleGrid, Image, Center} from "@chakra-ui/react"
 import { Typewriter } from 'react-simple-typewriter';
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import AboutMe from '../info/AboutMe.json';
 import Music from '../info/Music.json';
 import Books from "../info/Books.json";
@@ -13,26 +15,12 @@ import Seo from "../components/Seo";
 
 
 const PersonalPage = () => {
-    const [rotationIndex, setRotationIndex] = useState(0);
-
     const sectionCards = [
         { sectionHeading: "things that i enjoy", infoArray: Hobbies },
-        { sectionHeading: "books i've recently enjoyed", infoArray: Books },
+        { sectionHeading: "foundational experiences", infoArray: Foundations },
         { sectionHeading: "music i'd tell ya to listen to", infoArray: Music },
-        { sectionHeading: "foundational experiences", infoArray: Foundations }
+        { sectionHeading: "books i've recently enjoyed", infoArray: Books }
     ];
-
-    useEffect(() => {
-        const rotateInterval = setInterval(() => {
-            setRotationIndex((prev) => (prev + 1) % sectionCards.length);
-        }, 8000);
-
-        return () => clearInterval(rotateInterval);
-    }, [sectionCards.length]);
-
-    const rotatedCards = sectionCards.map((_, index) => (
-        sectionCards[(index + rotationIndex) % sectionCards.length]
-    ));
 
     return (
         <div style={{ padding: 'clamp(0.5rem, 2vw, 1rem)' }}>
@@ -82,24 +70,25 @@ const PersonalPage = () => {
                     paddingTop={{ base: "1em", md: "2em" }}
                     paddingX={{ base: "0.25em", md: "0.5em" }}
                 >
-                    {rotatedCards.map((card) => (
-                        <motion.div
-                            key={card.sectionHeading}
-                            layout
-                            transition={{
-                                layout: { type: "spring", stiffness: 90, damping: 20, mass: 0.9 },
-                                opacity: { duration: 0.25, ease: "easeOut" }
-                            }}
-                            initial={false}
-                            animate={{ opacity: 1 }}
-                        >
-                            <InfoSection
-                                sectionHeading={card.sectionHeading}
-                                infoArray={card.infoArray}
-                                variant="card"
-                                showBullets={false}
-                            />
-                        </motion.div>
+                    {sectionCards.map((card) => (
+                        <div key={card.sectionHeading}>
+                            {card.sectionHeading === "music i'd tell ya to listen to" ? (
+                                <VinylMusicCard songs={card.infoArray} />
+                            ) : card.sectionHeading === "books i've recently enjoyed" ? (
+                                <BookCard books={card.infoArray} />
+                            ) : card.sectionHeading === "things that i enjoy" ? (
+                                <PolaroidHobbiesCard hobbies={card.infoArray} />
+                            ) : card.sectionHeading === "foundational experiences" ? (
+                                <TrophyShelfCard items={card.infoArray} />
+                            ) : (
+                                <InfoSection
+                                    sectionHeading={card.sectionHeading}
+                                    infoArray={card.infoArray}
+                                    variant="card"
+                                    showBullets={false}
+                                />
+                            )}
+                        </div>
                     ))}
                 </SimpleGrid>
             </Stack>

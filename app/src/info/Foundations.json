@@ -1,13 +1,38 @@
 [
   {
-    "text": "president of a region-wide philanthropic group in high school",
-    "link": "https://globalcollectivepy.wixsite.com/website/past-initiatives"
-  },
-  {
-    "text": "delegate, moderator and director for model un",
+    "masthead": "the herald",
+    "section": "diplomacy",
+    "headline": "cpss model united nations",
+    "byline": "a. dinesan • '22",
+    "label": "model un",
+    "detail": "award-winning model un delegate, moderator & director",
     "link": "https://www.cpssmun.org/past-winners"
   },
   {
-    "text": "played basketball, badminton and hockey at various levels"
+    "masthead": "warriors weekly",
+    "section": "athletics",
+    "headline": "warriors take the hardwood",
+    "byline": "a. dinesan • '18",
+    "label": "basketball",
+    "detail": "played for the brampton warriors",
+    "link": null
+  },
+  {
+    "masthead": "the regional",
+    "section": "sports",
+    "headline": "offsa & ropssa badminton",
+    "byline": "a. dinesan • '21",
+    "label": "badminton",
+    "detail": "competed at offsa (state) and ropssa (regional) badminton championships",
+    "link": null
+  },
+  {
+    "masthead": "The Peel Paper",
+    "section": "community",
+    "headline": "global collective peel youth",
+    "byline": "a. dinesan • '20",
+    "label": "philanthropy",
+    "detail": "president of a region-wide philanthropic group in high school",
+    "link": "https://globalcollectivepy.wixsite.com/website/past-initiatives"
   }
 ]

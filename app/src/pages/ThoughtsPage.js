@@ -129,6 +129,9 @@ const ThoughtsPage = () => {
         <Text color="fg.muted" maxWidth="760px" fontSize={{ base: "sm", md: "md" }} mb={2}>
           writing on tech, society and engineering with a splash of humour
         </Text>
+        <Text color={muted} maxWidth="760px" fontSize={{ base: "2xs", md: "xs" }} opacity={0.75}>
+          disclosure: these thoughts are my own and do not reflect the views of any current or past employer.
+        </Text>
       </Box>
 
       <Grid maxWidth="1100px" margin="0 auto" width="100%" gap={{ base: 6, md: 10 }} templateColumns={{ base: "1fr", md: "240px 1fr" }}>
