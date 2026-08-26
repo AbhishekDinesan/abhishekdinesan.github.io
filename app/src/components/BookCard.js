@@ -107,7 +107,7 @@ const BookCard = ({ books }) => {
       minHeight="100%"
     >
       <Text fontSize={{ base: "sm", md: "md" }} letterSpacing="0.005em" marginBottom={5} textAlign="left">
-        pages i've flipped through
+        books i'd recommend
       </Text>
 
       <HStack

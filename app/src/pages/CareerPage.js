@@ -14,6 +14,7 @@ const CareerPage = () => {
     ];
 
     const future = [
+        "joining neuralink this fall as a SWE intern on the hippocampus team",
         "something to make tmrw better than today",
     ];
 

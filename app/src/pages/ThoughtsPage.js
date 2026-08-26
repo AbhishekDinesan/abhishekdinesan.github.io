@@ -8,8 +8,17 @@ import factoryFloorPost from "../info/ThoughtsFactoryFloor.json";
 import comfortableIrrelevancePost from "../info/ThoughtsComfortableIrrelevance.json";
 import siliconShieldPost from "../info/ThoughtsSiliconShield.json";
 import taxPenthousePost from "../info/ThoughtsTaxPenthouse.json";
+import anthropicFrontierPost from "../info/ThoughtsAnthropicFrontier.json";
 
 const posts = [
+  {
+    slug: "anthropic-vs-the-world",
+    readTime: "13 min read",
+    preview: "AI will become vastly more valuable while frontier labs capture a shrinking share of it.",
+    pinned: true,
+    category: "tech",
+    ...anthropicFrontierPost
+  },
   {
     slug: "tax-penthouse-not-payroll",
     readTime: "21 min read",
@@ -23,7 +32,7 @@ const posts = [
     readTime: "8 min read",
     preview: "why abundance may raise living standards while making many people economically unnecessary.",
     pinned: true,
-    category: "tech",
+    category: "social",
     ...comfortableIrrelevancePost
   },
   {

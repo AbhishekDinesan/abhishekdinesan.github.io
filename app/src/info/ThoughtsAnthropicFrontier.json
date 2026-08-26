@@ -1,0 +1,134 @@
+{
+  "postLabel": "post 005",
+  "title": "Anthropic vs the World: The Trillion-Dollar Issue of Valuing the Frontier",
+  "dek": "AI will become vastly more valuable while frontier labs capture a shrinking share of it.",
+  "meta": "abhi dinesan • august 2026 • ai, markets, valuation",
+  "openingParagraphs": [
+    "Anthropic sure has come a long way.",
+    "Borne from the ashes of distrust ruminating from the San Francisco offices of OpenAI, this righteous fork of a frontier lab was founded in early 2021 with the goal of steerable, interpretable, and robust artificial intelligence.",
+    "They had lost the first-mover race - and it wasn't close. Chat was a verb long before most people had heard of Claude. And despite this, recent financial disclosures have shown that the Amodeis have balance-sheet-mogged Altman in a comeback that makes the 2017 Atlanta Falcons look competent.",
+    "Anthropic figured out what Sam Altman had presumably been telling YC founders for a decade: the money is in enterprise.",
+    "In May 2023, while everyone else optimized for consumer novelty and shitty haikus, Claude shipped a 100k token context window that allowed it to eat up contracts, codebases, and enterprise documents unlike any other. They wired themselves into Notion and Quora while the competition chased short-form content and partnerships with Jake Paul. They positioned themselves as the enterprise-safe, enterprise-friendly alternative to ChatGPT.",
+    "I switched onto team Claude myself after their controversial Super Bowl ads made me laugh in what otherwise was, a depressing broadcast (I still love you Drake Maye). Since then I've spent more dinners talking to Claude than single women my age, which I'd like to think says more about the quality of the product than about me.",
+    "And by the numbers, I'm probably not the only one.",
+    "$9 billion in annualized revenue in January. $19 billion by March. $30 billion in April, $47 billion in May, north of $65 billion by the end of July. Investors are reportedly targeting more than $2 trillion for an October listing - the largest public offering ever attempted, by a margin that makes SpaceX seem down to earth.",
+    {"heading": "A Few Things To Get Out of the Way"},
+    "Before I get into my arguments, I want to make a few things clear. Anthropic is the most talent dense team in the world. Anthropic has an incredible product and I think, barring any tremendous step-wise breakthroughs, will continue to be the most formidable frontier lab. And despite the fact that Dario Amodei needs PR training, and should probably stop telling people that AI will bring Armageddon while shipping that same AI on a weekly cadence - I maintain that they seem like a conscientious, intelligent group of people that could be trusted with super-powerful intelligence, if anyone ought to be trusted at all.",
+    {"aside": "btw if anyone from Anthropic is reading this, I graduate soon ;)"},
+    "My arguments are purely in terms of financials, value creation and market expectations. Anthropic may have the smartest intelligence in the history of the world; but at its current valuation, it assumes that it will continue to capture an enormous share of the total value created by AI. They are asked to accomplish this indefinitely, all while competing against competitors and customers who benefit from seeing their business become a commodity.",
+    "And I don't think this assumption will hold.",
+    "My core thesis is that AI can, and will become vastly more valuable, while frontier-model providers will capture a diminishing percentage of that value."
+  ],
+  "stats": [],
+  "sections": [
+    {
+      "heading": "Let Them Eat (Ice-Cream) Cake",
+      "paragraphs": [
+        "After my time at NVIDIA this summer, I've held a newfound appreciation for the strategic genius of Jensen Huang. Although it's a topic for another time, I don't think he gets enough credit for building the basis of modern day NVIDIA decades in advance.",
+        "Anyways, if you've ever seen Jensen give an interview, he uses a pretty simple model of AI - being a five layer cake. Energy, chips, infrastructure, models, applications. The idea is that all layers of the stack are co-dependent on one another and must scale together for the continued success of artificial intelligence.",
+        {
+          "diagram": "ai-stack-cake",
+          "title": "Jensen's five-layer cake"
+        },
+        "And so far, he's right - we've seen a ton of value creation across the cake.",
+        "Energy: we've seen massive winners in Constellation Energy and GE Vernova, as well as a nuclear renaissance of sorts where misinformed retail investors are throwing their life savings at every garage, mom and pop store and warehouse mechanic that's promising small scale reactors to fuel datacenter expansion. (It's me, I'm the misinformed retail investor.)",
+        "Chips: NVIDIA's run peaks for itself (just check out the parking garage) but we've seen tremendous growth in TSMC, Broadcom, Micron, AMD and Intel. We're even seeing smaller challengers in this space with startups like Etched and d-Matrix making high conviction bets on the chip layer, optimizing for current AI workloads.",
+        "Infrastructure: CoreWeave, Nebius and Crusoe have made some serious bread by renting compute, while companies like Arista Networks and Vertiv have paid for some all-inclusive vacations by making sure data centers are connected and maintained. On the service layer, there are plenty of startups raising hell in the private markets where Baseten, Fireworks AI, Together AI and Modal are helping enterprises and developers alike with serving and accessing compute.",
+        "Applications: and most apparent to consumers, we've seen growth from FAANGs like Meta, Apple, Microsoft and Amazon (although these go down to model and infra as well) to defense applications from Palantir, Raytheon and Anduril, to the AI pure play startups like Cursor, Harvey, Perplexity and Cognition.",
+        "But obviously, these all depend on the model layer, which is where Anthropic lies.",
+        "It's kinda like the filling in the cake. It's what makes cake....cake, and not just a chunk of sweet bread. It's like that dark chocolate layer in the Dairy Queen ice cream cakes that they've made smaller year over year and is quite literally the only part of the cake that's worth buying. Despite this, you keep buying it because it's just so good and you put up with the lackluster ice cream that lays above it just to get to the one spoonful of goodness, but then you feel bloated and regret paying $40 for ice-cream cake when you could have bought an ice-cream cone for $4.",
+        "Hold onto the cone. We'll come back to it."
+      ]
+    },
+    {
+      "heading": "Everyone Else on the Cake Is Working Against the Filling",
+      "paragraphs": [
+        "Here's the thing about the cake: everyone, and I mean everyone else standing on it is better off if Anthropic doesn't own the filling.",
+        "If you're on the serving layer, your business only exists in a world where enterprises choose between many models, tuned to verticals and use cases. If Claude wins outright, that choice collapses into Anthropic's own enterprise platform and Baseten just sounds like the name of an elementary-school math game.",
+        "If you sell chips or pour concrete for data centers, you want as many well-funded labs bidding as markets allow. One buyer with pricing power is a worse customer than six desperate ones. The same logic runs all the way down to the grid.",
+        "Then there's the application layer, which is where this gets uncomfortable. If you're the founder of a YC AI B2B SaaS, or worse, employee #7 - here is a trigger warning.",
+        "The moment Anthropic is a public company, it has to climb to the application layer. The filling is forced to take up more of the cake, and will go after the icing and frosting on top.",
+        "A $2 trillion valuation cannot be supported by selling tokens, and Anthropic already knows it: Claude Code, then Cowork, then agents, then whole enterprise workflows. Each step up is a step onto a customer's vertical.",
+        "If you want to know how this ends, watch what happened in biology.",
+        "On June 30th, Anthropic launched Claude Science. Within hours, Schrödinger fell as much as 8.3%, Recursion 3.3%, IQVIA north of 2%. The market understood immediately that a model provider had .....stopped being a model provider. Its head of life sciences has been explicit that the ambition is for a meaningful share of the world's scientific work to run on Claude, the way software development already does.",
+        "Suddenly, the company selling intelligence is building the very thing companies want intelligence to build.",
+        "Which is the problem. To defend the current valuation and public market expectations, Anthropic has to compete with the application companies buying its tokens. And those companies aren't stupid - they can read headlines as well as I can.",
+        "So they will hedge, if not refuse to send their private info to Anthropic altogether. They look at competitors, abstract the model behind routers, add multiple providers, use open-source - whatever they can do to preserve their competitive advantage against a more intelligent competitor."
+      ]
+    },
+    {
+      "heading": "The Base of the Cake Belongs to Someone Else",
+      "paragraphs": [
+        "Then there's the international headwinds.",
+        "In this cake analogy, the West's only real lead is at the model and application layers, the filling and the frosting. Everything below is a construction problem, and China is better at construction. They generate roughly twice the electricity the United States does. They pour concrete faster, build grids faster, stand up factories faster, and they will build the robots. Their advantages compound the instant intelligence has to touch something physical.",
+        "DeepSeek, Qwen, GLM, Kimi - these aren't charity projects. Beijing can fund them at a loss indefinitely, because giving the filling away for free relocates the entire contest to the base of the cake, layers that China already owns.",
+        "I wouldn't bet against Chinese open source. It's the cheapest weapon in the arsenal, and it's aimed at the only layer where the West is still ahead."
+      ]
+    },
+    {
+      "heading": "Where Useful Models Actually End Up Living",
+      "paragraphs": [
+        "Which brings me to what I actually think happens.",
+        "The future of useful models does not stay inside frontier labs. Picture a hedge fund or a consultancy with forty years of proprietary data. A hospital network with two decades of longitudinal outcomes. An insurer with a century of claims. An industrial firm with sensor telemetry from ten thousand machines. Each of them owns a feedback loop with real customers, a distribution channel, and enterprise-confidential data you cannot outsource from Mumbai.",
+        "None of them can build Opus and none of them need to. What they have is the one input Anthropic can't buy, scrape, or synthesize: proprietary evidence of what actually worked, attached to a loop that keeps generating more of it.",
+        "Once open weights approximate frontier capability closely enough, raw intelligence stops being the scarce resource and becomes an ingredient - one every serious firm can now buy in bulk and fold into recipes Anthropic will never have access to. Post-training on confidential enterprise data becomes lucrative enough that some of these models stop being internal tools and start being enterprise or even consumer-facing products.",
+        "Which is where the ice cream cake comes back - is it even worth buying if the chocolate filling isn't as appealing? At what point is the marginal difference in intelligence worth exposing your data, paying frontier token prices, and forfeiting the chance to build, train and commoditize your own models that know the ins and outs of your business? That math gets worse for Anthropic every quarter, because the gap narrows while the price doesn't.",
+        "This isn't a bad outcome for the world. It's a very bad outcome for anyone who paid $2 trillion for the chocolate filling in the Dairy Queen ice cream cake - the layer they keep making thinner, that everyone else on the cake is actively working to replace.",
+        "And to be clear about why I think this happens - it isn't because it's the fairest outcome or because it helps the most people. It happens because it's the outcome with the most capital behind it. The world's most valuable chip company is funding it. The hyperscalers fund it while reselling Claude at a markup. Meta funds it. Beijing funds it as a core part of their foreign policy. Honestly, I think it's only a matter of time before the neoclouds themselves fund it.",
+        "That's huge sovereign balance sheets, the world's second most powerful country (for now) and ten thousand venture-backed startups all pushing the same direction.",
+        "Anthropic is one company, pushing back, priced as though it will win."
+      ]
+    },
+    {
+      "heading": "The Frontier Is Overrated",
+      "paragraphs": [
+        "So that's the competitive problem: everyone on the cake is better off if Anthropic doesn't dominate the model layer. But there's a second problem, because it may not be something Anthropic can control at all.",
+        "We spend an absurd share of our collective attention on the ceiling. How fast can the new model one-shot tic-tac-toe? How convincing are the AI-generated photos of LeBron James and I? How many r's in strawberry? Every launch is covered like a heavyweight title fight, best on best.",
+        "Almost nobody writes about the floor.",
+        "The floor is the more interesting number. Not how smart can a model get, but how smart does a model have to be before the marginal IQ point stops changing the outcome of the work.",
+        {
+          "diagram": "capability-floor",
+          "title": "The ceiling gets the headlines. The floor decides the market."
+        },
+        "Because here's the thing: most work is not THAT hard. Most of us aren't little Einsteins running around screaming about general relativity or inventing Newtonian physics from first principles. Most work in white collar America is summarizing files, reconciling spreadsheets, turning transcripts into presentations and doing market research. Very few of us are inventing novel thermodynamics. The typical enterprise task has a competence threshold, and once a model clears it, additional intelligence produces nothing worth billing for.",
+        "My point is, the TAM of intelligence doesn't correlate directly with capability.",
+        "And for those MIT, Stanford or CMU graduates that haven't had the distinct privilege of attending the Lazaridis School of Business, TAM stands for Total Addressable Market (business schools love acronyms because they make ordinary ideas sound more profound than they are). It's basically the number of potential customers you could have.",
+        "My claim isn't that AI's TAM shrinks. It explodes. AI will be enormous, but what shrinks is the fraction of that TAM that requires frontier intelligence.",
+        "Those are completely different statements and the market, I think, is conflating them, or is entirely oblivious. Every dollar of AI value creation is being underwritten as though it flows through a frontier model. Most of it won't. Most of it will flow through something cheap, small, private, and entirely good enough.",
+        "Yes - you heard that right - you can just be good enough.",
+        "Especially when it pays to do so. Frontier inference is a metered utility that falls in OPEX where a supplier sets the price. Open weights are mostly CAPEX, a one time investment into hardware, where you download, tune and deploy, and the marginal cost drops down to the price of electricity.",
+        "As more companies draw inspiration from Uber and blast through their annual frontier token usage in a single quarter, this differentiation will become important."
+      ]
+    },
+    {
+      "heading": "Betting Against the World",
+      "paragraphs": [
+        "Strip away the media coverage, the benchmarks, and the twitter discourse, and the case for a $2 trillion Anthropic reduces to three fundamental claims.",
+        {
+          "claims": [
+            "Frontier intelligence grows into an enormous market on its own.",
+            "Anthropic maintains its position dominating that frontier market.",
+            "The market pays a premium for every dollar of that revenue, years from now, after the growth has normalized."
+          ]
+        },
+        "Basically, all three of these statements need to go right. And I'm entirely willing to concede the first two. (Although I definitely think that in the long term, the xAI team is going to be a serious, serious threat to Anthropic in the coding vertical with their vertically integrated stack and their recently acquired Cursor feedback loop. Not to mention that counting out OpenAI would also be crazy, as their latest models seem somewhat comparable on benchmarks at a far lower token cost.) For the sake of this example, let's allow the first two statements to be true.",
+        "But in a world where the floor of intelligence rapidly advances, will we continue to pay a premium for a marginal increase?",
+        {"text": "In a world full of ice cream cones, is it worth buying an ice cream cake?", "italic": true},
+        "I think the most interesting part of this argument is the fact that it's not within Anthropic's control. They can continue to dominate, even grow their market share, but once you're the clear leader in an industry the difference between owning 70% and 80% is rather negligible compared to how big the industry becomes and how much buyers are willing to pay.",
+        "And you can't fix that with a PR statement or a Super Bowl ad.",
+        "And at $2 trillion on a $65 billion run rate, the market is paying roughly 31 times revenue - for a business whose core input is technically available for free, in somewhat decent yet improving quality, from fifty other places, and whose customers are actively working to need less of it.",
+        "So consider the scenario that should actually worry the retail Anthropic investor. Let's assume that frontier models absolutely RIP. Let's also assume that Anthropic holds the vast majority of market share. Let's assume that revenue triples - flawless execution, four straight years of it, the best operating performance in the history of technology. Nobody gets fired, everyone is singing kumbaya and Dario wins a Nobel Prize and all of God's people say Amen.",
+        "Suppose Anthropic triples run-rate revenue to $195 billion over four years. Extraordinary.",
+        "Now assume the only thing I've argued in this entire essay: that somewhere in those four years, Anthropic stops being a company that can name its price. The multiple compresses to what a traditionally large, competitive, capital-intensive business is priced at. If competition and commoditization reduce its revenue multiple from 31x to 12x, its implied value is roughly $2.3 trillion: only modest upside despite near-flawless execution.",
+        "You end up roughly where you started - triple the revenue, none of the return - because the entry price priced in margins from three years ago.",
+        "I find it very difficult to believe in a future, three to four years from now, where Anthropic will be priced at the same multiple that it receives during its IPO.",
+        "The floor WILL get better. The floor WILL get good enough.",
+        "And that's the version where Anthropic wins.",
+        "Anyways, I can't tell you whether Anthropic will be worth $2 trillion. Or $3 trillion. Or $4 trillion. Capital markets can behave rather irrationally, and this company is truly exceptional, with an exceptional product, an exceptional team and working towards exceptional things.",
+        "What I can tell you is what the current IPO numbers assume. It assumes the filling stays scarce while everyone on the cake works to make it abundant. It assumes the world keeps needing the frontier for work the floor could do. It assumes one company can single-handedly fend off huge sovereign balance sheets, a rival superpower, and ten thousand startups.",
+        "When you buy a frontier lab at this price, you aren't betting on the frontier lab. You're betting it can beat the entire world at once."
+      ]
+    }
+  ],
+  "pullQuote": "\"And I for one, would not make that bet.\""
+}

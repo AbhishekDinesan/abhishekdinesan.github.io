@@ -5,7 +5,7 @@ import Navbar from './components/navbar'
 import Block from './components/footer'
 import LandingPage from './pages/LandingPage'
 import PersonalPage from './pages/PersonalPage';
-import CareerPage from './pages/CareerPage';
+// import CareerPage from './pages/CareerPage';
 import ThoughtsPage from './pages/ThoughtsPage';
 import ThoughtsPostPage from './pages/ThoughtsPostPage';
 import RewrittenPage from './pages/RewrittenPage';
@@ -33,7 +33,7 @@ function App() {
               <Route path="/" element={<LandingPage />} />
               <Route path="/personal" element={<PersonalPage />} />
               <Route path="/personal/rewritten" element={<RewrittenPage />} />
-              <Route path="/career" element={<CareerPage />} />
+              {/* <Route path="/career" element={<CareerPage />} /> */}
               <Route path="/thoughts" element={<ThoughtsPage />} />
               <Route path="/thoughts/:slug" element={<ThoughtsPostPage />} />
             </Routes>

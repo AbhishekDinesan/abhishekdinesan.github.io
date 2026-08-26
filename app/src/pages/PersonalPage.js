@@ -19,7 +19,7 @@ const PersonalPage = () => {
         { sectionHeading: "things that i enjoy", infoArray: Hobbies },
         { sectionHeading: "foundational experiences", infoArray: Foundations },
         { sectionHeading: "music i'd tell ya to listen to", infoArray: Music },
-        { sectionHeading: "books i've recently enjoyed", infoArray: Books }
+        { sectionHeading: "books i'd recommend", infoArray: Books }
     ];
 
     return (
@@ -74,7 +74,7 @@ const PersonalPage = () => {
                         <div key={card.sectionHeading}>
                             {card.sectionHeading === "music i'd tell ya to listen to" ? (
                                 <VinylMusicCard songs={card.infoArray} />
-                            ) : card.sectionHeading === "books i've recently enjoyed" ? (
+                            ) : card.sectionHeading === "books i'd recommend" ? (
                                 <BookCard books={card.infoArray} />
                             ) : card.sectionHeading === "things that i enjoy" ? (
                                 <PolaroidHobbiesCard hobbies={card.infoArray} />

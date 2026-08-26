@@ -16,9 +16,9 @@ const Navbar = () => {
       <Box onClick={onClick}>
         <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'personal'} link="/personal"/>
       </Box>
-      <Box onClick={onClick}>
+      {/* <Box onClick={onClick}>
         <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'career'} link="/career"/>
-      </Box>
+      </Box> */}
       <Box onClick={onClick}>
         <TextButton size={ButtonSizes.medium} variant={ButtonVariant.standard} text={'thoughts'} link="/thoughts"/>
       </Box>

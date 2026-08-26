@@ -1,13 +1,16 @@
-import { Box, Heading, Stack, Text, SimpleGrid, Grid } from "@chakra-ui/react";
+import { Box, Heading, HStack, Stack, Text, SimpleGrid, Grid } from "@chakra-ui/react";
 import { useColorModeValue } from "../components/ui/color-mode";
 import { useParams } from "react-router-dom";
 import Seo from "../components/Seo";
+import ThoughtsDiagram from "../components/ThoughtsDiagram";
 import factoryFloorPost from "../info/ThoughtsFactoryFloor.json";
 import comfortableIrrelevancePost from "../info/ThoughtsComfortableIrrelevance.json";
 import siliconShieldPost from "../info/ThoughtsSiliconShield.json";
 import taxPenthousePost from "../info/ThoughtsTaxPenthouse.json";
+import anthropicFrontierPost from "../info/ThoughtsAnthropicFrontier.json";
 
 const postsBySlug = {
+  "anthropic-vs-the-world": anthropicFrontierPost,
   "tax-penthouse-not-payroll": taxPenthousePost,
   "factory-floor-national-security": factoryFloorPost,
   "comfortable-irrelevance-ai-abundance": comfortableIrrelevancePost,
@@ -20,6 +23,77 @@ const renderSectionParagraph = (paragraph, key, colors) => {
       <Text key={key} color={colors.bodyColor} fontSize={{ base: "sm", md: "md" }} lineHeight="1.95">
         {paragraph}
       </Text>
+    );
+  }
+
+  if (paragraph?.heading) {
+    return (
+      <Heading key={key} color={colors.headingColor} fontSize={{ base: "xl", md: "2xl" }} mt={2}>
+        {paragraph.heading}
+      </Heading>
+    );
+  }
+
+  if (paragraph?.diagram) {
+    return (
+      <ThoughtsDiagram
+        key={key}
+        name={paragraph.diagram}
+        title={paragraph.title}
+        caption={paragraph.caption}
+      />
+    );
+  }
+
+  if (paragraph?.claims) {
+    return (
+      <Box
+        key={key}
+        bg={colors.panelBg}
+        border="1px solid"
+        borderColor={colors.borderColor}
+        borderRadius="lg"
+        padding={{ base: 4, md: 5 }}
+      >
+        <Stack gap={4}>
+          {paragraph.claims.map((claim, claimIndex) => (
+            <HStack key={`${key}-claim-${claimIndex}`} align="flex-start" gap={3}>
+              <Text
+                color={colors.muted}
+                fontSize={{ base: "sm", md: "md" }}
+                fontWeight="bold"
+                lineHeight="1.7"
+                flexShrink={0}
+              >
+                {claimIndex + 1}.
+              </Text>
+              <Text
+                color={colors.headingColor}
+                fontSize={{ base: "sm", md: "md" }}
+                fontWeight="semibold"
+                lineHeight="1.7"
+              >
+                {claim}
+              </Text>
+            </HStack>
+          ))}
+        </Stack>
+      </Box>
+    );
+  }
+
+  if (paragraph?.aside) {
+    return (
+      <Box key={key} borderLeft="3px solid" borderColor={colors.borderColor} pl={4} py={1}>
+        <Text
+          color={colors.muted}
+          fontSize={{ base: "sm", md: "md" }}
+          fontStyle="italic"
+          lineHeight="1.8"
+        >
+          {paragraph.aside}
+        </Text>
+      </Box>
     );
   }
 
@@ -79,6 +153,7 @@ const ThoughtsPostPage = () => {
   const muted = useColorModeValue("gray.500", "gray.500");
   const borderColor = useColorModeValue("gray.200", "whiteAlpha.200");
   const panelBg = useColorModeValue("gray.50", "whiteAlpha.100");
+  const paragraphColors = { bodyColor, headingColor, borderColor, panelBg, muted };
 
   return (
     <Box
@@ -127,20 +202,7 @@ const ThoughtsPostPage = () => {
 
           <Stack gap={5}>
             {post.openingParagraphs.map((item, index) =>
-              typeof item === "object" && item.heading ? (
-                <Heading
-                  key={`opening-${index}`}
-                  color={headingColor}
-                  fontSize={{ base: "xl", md: "2xl" }}
-                  mt={2}
-                >
-                  {item.heading}
-                </Heading>
-              ) : (
-                <Text key={`opening-${index}`} color={bodyColor} fontSize={{ base: "sm", md: "md" }} lineHeight="1.95">
-                  {item}
-                </Text>
-              )
+              renderSectionParagraph(item, `opening-${index}`, paragraphColors)
             )}
           </Stack>
 
@@ -167,12 +229,11 @@ const ThoughtsPostPage = () => {
               </Heading>
               <Stack gap={4}>
                 {(section.paragraphs ?? []).map((paragraph, paragraphIndex) => (
-                  renderSectionParagraph(paragraph, `section-${sectionIndex}-paragraph-${paragraphIndex}`, {
-                    bodyColor,
-                    headingColor,
-                    borderColor,
-                    panelBg
-                  })
+                  renderSectionParagraph(
+                    paragraph,
+                    `section-${sectionIndex}-paragraph-${paragraphIndex}`,
+                    paragraphColors
+                  )
                 ))}
               </Stack>
             </Box>
