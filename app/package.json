@@ -20,7 +20,7 @@
     "react-simple-typewriter": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://abhishekdinesan.github.io",
+  "homepage": "https://abhidinesan.com",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",

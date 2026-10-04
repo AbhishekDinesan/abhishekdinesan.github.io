@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://abhishekdinesan.github.io/</loc>
+    <loc>https://abhidinesan.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://abhishekdinesan.github.io/personal</loc>
+    <loc>https://abhidinesan.com/personal</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://abhishekdinesan.github.io/personal/rewritten</loc>
+    <loc>https://abhidinesan.com/personal/rewritten</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://abhishekdinesan.github.io/thoughts</loc>
+    <loc>https://abhidinesan.com/thoughts</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://abhishekdinesan.github.io/thoughts/anthropic-vs-the-world</loc>
+    <loc>https://abhidinesan.com/thoughts/anthropic-vs-the-world</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://abhishekdinesan.github.io/thoughts/tax-penthouse-not-payroll</loc>
+    <loc>https://abhidinesan.com/thoughts/tax-penthouse-not-payroll</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://abhishekdinesan.github.io/thoughts/comfortable-irrelevance-ai-abundance</loc>
+    <loc>https://abhidinesan.com/thoughts/comfortable-irrelevance-ai-abundance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const SITE_URL = "https://abhishekdinesan.github.io";
+const SITE_URL = "https://abhidinesan.com";
 const DEFAULT_TITLE = "Abhi Dinesan | Product Engineer and Builder";
 const DEFAULT_DESCRIPTION =
   "Abhi Dinesan builds production-grade products across private equity, media, and big tech with a focus on AI systems and high-leverage engineering.";
