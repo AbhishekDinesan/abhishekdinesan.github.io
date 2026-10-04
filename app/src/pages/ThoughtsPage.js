@@ -118,7 +118,7 @@ const ThoughtsPage = () => {
         description="Essays by Abhi Dinesan on technology, systems, policy, and product engineering."
         path="/thoughts"
       />
-      <Box maxWidth="900px" margin="0 auto" width="100%" textAlign="left">
+      <Box maxWidth="1100px" margin="0 auto" width="100%" textAlign="left">
         <Text color="fg.muted" maxWidth="760px" fontSize={{ base: "sm", md: "md" }} mb={2}>
           writing on tech, society and engineering with a splash of humour
         </Text>
