@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import { useColorModeValue } from "../components/ui/color-mode";
 import { LuPin } from "react-icons/lu";
 import Seo from "../components/Seo";
-import factoryFloorPost from "../info/ThoughtsFactoryFloor.json";
 import comfortableIrrelevancePost from "../info/ThoughtsComfortableIrrelevance.json";
-import siliconShieldPost from "../info/ThoughtsSiliconShield.json";
 import taxPenthousePost from "../info/ThoughtsTaxPenthouse.json";
 import anthropicFrontierPost from "../info/ThoughtsAnthropicFrontier.json";
 
@@ -32,22 +30,8 @@ const posts = [
     readTime: "8 min read",
     preview: "why abundance may raise living standards while making many people economically unnecessary.",
     pinned: true,
-    category: "social",
+    category: "tech",
     ...comfortableIrrelevancePost
-  },
-  {
-    slug: "silicon-shield-sacred-mountain",
-    readTime: "12 min read",
-    preview: "TSMC, silicon shields, and why Canada needs a sacred mountain.",
-    category: "tech",
-    ...siliconShieldPost
-  },
-  {
-    slug: "factory-floor-national-security",
-    readTime: "6 min read",
-    preview: "why industrial capability is quietly hollowing out, and why it's important.",
-    category: "tech",
-    ...factoryFloorPost
   }
 ];
 

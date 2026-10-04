@@ -3,18 +3,14 @@ import { useColorModeValue } from "../components/ui/color-mode";
 import { useParams } from "react-router-dom";
 import Seo from "../components/Seo";
 import ThoughtsDiagram from "../components/ThoughtsDiagram";
-import factoryFloorPost from "../info/ThoughtsFactoryFloor.json";
 import comfortableIrrelevancePost from "../info/ThoughtsComfortableIrrelevance.json";
-import siliconShieldPost from "../info/ThoughtsSiliconShield.json";
 import taxPenthousePost from "../info/ThoughtsTaxPenthouse.json";
 import anthropicFrontierPost from "../info/ThoughtsAnthropicFrontier.json";
 
 const postsBySlug = {
   "anthropic-vs-the-world": anthropicFrontierPost,
   "tax-penthouse-not-payroll": taxPenthousePost,
-  "factory-floor-national-security": factoryFloorPost,
-  "comfortable-irrelevance-ai-abundance": comfortableIrrelevancePost,
-  "silicon-shield-sacred-mountain": siliconShieldPost
+  "comfortable-irrelevance-ai-abundance": comfortableIrrelevancePost
 };
 
 const renderSectionParagraph = (paragraph, key, colors) => {
@@ -146,7 +142,7 @@ const renderSectionParagraph = (paragraph, key, colors) => {
 
 const ThoughtsPostPage = () => {
   const { slug } = useParams();
-  const post = postsBySlug[slug] ?? factoryFloorPost;
+  const post = postsBySlug[slug] ?? anthropicFrontierPost;
   const pageBg = useColorModeValue("white", "#0a0a0b");
   const headingColor = useColorModeValue("gray.900", "white");
   const bodyColor = useColorModeValue("gray.700", "gray.300");
