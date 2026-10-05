@@ -13,10 +13,15 @@ const postsBySlug = {
   "comfortable-irrelevance-ai-abundance": comfortableIrrelevancePost
 };
 
+const bodyTextProps = {
+  fontSize: { base: "17px", md: "18px" },
+  lineHeight: "1.7"
+};
+
 const renderSectionParagraph = (paragraph, key, colors) => {
   if (typeof paragraph === "string") {
     return (
-      <Text key={key} color={colors.bodyColor} fontSize={{ base: "sm", md: "md" }} lineHeight="1.95">
+      <Text key={key} color={colors.bodyColor} {...bodyTextProps}>
         {paragraph}
       </Text>
     );
@@ -131,8 +136,7 @@ const renderSectionParagraph = (paragraph, key, colors) => {
     <Text
       key={key}
       color={colors.bodyColor}
-      fontSize={{ base: "sm", md: "md" }}
-      lineHeight="1.95"
+      {...bodyTextProps}
       fontStyle={paragraph?.italic ? "italic" : undefined}
     >
       {paragraph?.text ?? ""}
@@ -167,11 +171,11 @@ const ThoughtsPostPage = () => {
         type="article"
       />
       <Box
-        maxWidth="760px"
+        maxWidth="680px"
         margin="0 auto"
         width="100%"
         borderRadius="xl"
-        padding={{ base: 3, md: 6 }}
+        padding={{ base: 0, md: 6 }}
       >
         <Stack gap={{ base: 5, md: 6 }}>
           <Heading
@@ -218,7 +222,7 @@ const ThoughtsPostPage = () => {
               <Heading
                 color={headingColor}
                 fontSize={{ base: "xl", md: "2xl" }}
-                mt={sectionIndex === 0 ? 2 : 0}
+                mt={sectionIndex === 0 ? 2 : { base: 10, md: 12 }}
                 mb={3}
               >
                 {section.heading}
